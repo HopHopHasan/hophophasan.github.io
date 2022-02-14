@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<!-- Created with https://packager.turbowarp.org/ -->
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <!-- We only include this to explicitly loosen the CSP of various packager environments. It does not provide any security. -->
   <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: blob:">
   <title>Bob Perf Test 13</title>
   <style>
@@ -196,7 +194,7 @@
       const scaffolding = new Scaffolding.Scaffolding();
       scaffolding.width = 640;
       scaffolding.height = 360;
-      scaffolding.resizeMode = "dynamic-resize";
+      scaffolding.resizeMode = "preserve-ratio";
       scaffolding.editableLists = false;
       scaffolding.setup();
       scaffolding.appendTo(appElement);
@@ -212,7 +210,7 @@
         videoProvider: vm.runtime.ioDevices.video.provider
       };
 
-      scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
+      scaffolding.setUsername("bob#####".replace(/#/g, () => Math.floor(Math.random() * 10)));
       scaffolding.setAccentColor("#ff4c4c");
 
       {const providers = {};
@@ -270,12 +268,12 @@ scaffolding.addCloudProviderOverride("☁ url", providers["local"] || null);
 
       vm.setTurboMode(false);
       if (vm.setInterpolation) vm.setInterpolation(false);
-      if (vm.setFramerate) vm.setFramerate(30);
+      if (vm.setFramerate) vm.setFramerate(60);
       if (vm.renderer.setUseHighQualityRender) vm.renderer.setUseHighQualityRender(false);
       if (vm.setRuntimeOptions) vm.setRuntimeOptions({
-        fencing: true,
-        miscLimits: true,
-        maxClones: 300,
+        fencing: false,
+        miscLimits: false,
+        maxClones: 9999999999,
       });
       if (vm.setCompilerOptions) vm.setCompilerOptions({
         enabled: true,
@@ -283,7 +281,7 @@ scaffolding.addCloudProviderOverride("☁ url", providers["local"] || null);
       });
 
       if (typeof ScaffoldingAddons !== 'undefined') {
-        ScaffoldingAddons.run(scaffolding, {"gamepad":false,"pointerlock":false,"specialCloudBehaviors":true,"unsafeCloudBehaviors":false,"pause":false});
+        ScaffoldingAddons.run(scaffolding, {"gamepad":true,"pointerlock":false,"specialCloudBehaviors":true,"unsafeCloudBehaviors":false,"pause":false});
       }
 
       for (const extension of []) {
