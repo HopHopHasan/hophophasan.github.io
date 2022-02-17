@@ -12,27 +12,58 @@
     <link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 	<link rel="stylesheet" href="style.css">
+	<!--load the external js file so you can call its function later-->
+	<script type="text/javascript" src="scripts/setdarkmode.js"></script>
 </head>
 <body>
+<script src="scripts/checktheme.js"></script>
 <h1>WEBSITE BEING BUILT!!</h1>
 <p>This website is being built! Please be patient!<br>
 Send any ideas to my email: <a href="mailto:hasmaj16@gmail.com">hasmaj16@gmail.com</a>.</p>
 <a href="https://blog.hophophasan.tk">Check out the blog site.</a>
 <a href="bob.html">Check out Bob Test.</a>
-<p id="fonttest">Used in SONIC UNLEASHED in the subtitles and text, and in 
-    a bunch of other Sonic games!</p>
-<p id="fonttest2">This is the "system font" on the GAMECUBE, WII, DSi, 3DS 
-    and WII U and a bunch of games.</p>
-<p id="fonttest3">This font is used in Paper Mario: The Thousand-Year Door 
-    (Japanese language) and Super Paper Mario (Japanese language), yet I'm 
-    writing in English. The punctuation is not going to work!!!!! It got 
-    that weird spacing. You can probably guess why the font has 15444 
-    glyphs ああああああああああ...!</p>
-<p id="fonttest4">This font is used in the English language in those games. 
-    This font only has 90 glyphs. Oh god good luck translating games oh 
-    god oh god oh god.</p>
-<p>Testing confirms that CJK (+latin) fonts will take a huge performance hit
-    compared to their latin alternatives.</p>
-</p>
+<p id="fonttest">test</p>
+<p id="fonttest2">test2</p>
+<p id="fonttest3">test3</p>
+<p id="fonttest4">test4</p>
+<div id="time">TIME UNKNOWN !!</div>
+<div id="result"></div>
+
+<script>
+var w;
+if(typeof(Worker) !== "undefined") {
+  if(typeof(w) == "undefined") {
+	w = new Worker("script/gettime.js");
+  }
+  w.onmessage = function(event) {
+	document.getElementByID("time").innerHTML = event.data;
+  };
+}
+</script>
+
+<script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+
+function deletewebstorage() {
+  localStorage.removeItem("darkmode");
+  localStorage.removeItem("clickcount");
+}
+</script>
+
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<p><button onclick="setdarkmode()" type="button">Toggle darkmode</button></p>
+<p><button onclick="deletewebstorage()" type="button">Delete web storage</button></p>
+<div id="darkmode"></div>
 </body>
 </html>
