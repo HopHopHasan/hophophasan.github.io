@@ -11,6 +11,8 @@ if (localStorage.darkmode) {
 	var element = document.body;
     element.classList.toggle("darkmode");
     console.log("dark mode loaded from the user's device preferences");
+    localStorage.darkmode = 1;
 } else if (userPrefersLight) {
 	console.log("user's device prefers light - nothing loaded");
+  localStorage.darkmode = 0;
 }
