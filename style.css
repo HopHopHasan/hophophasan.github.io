@@ -33,24 +33,12 @@ h1 {
   font-size: 50px;
 }
 
-#fonttest {
-  font-family: 'AntioStd';
-  line-height: 1.2;
-  font-size: 150%;
-}
-
-#fonttest2 {
-  font-family: 'Rodin';
-  line-height: 1.2;
-  font-size: 150%;
-}
-
-#fonttest3 {
+#SeuratCapie {
   font-family: 'SeuratCapie';
   line-height: 1.2;
   font-size: 150%;
 }
 
-#fonttest4 {
+#HeyGorgeous {
   font-family: 'HeyGorgeous';
 }
