@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clipboard</title>
+  <!--metadata-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Keywords" content="HopHopHasan, blog, website, Hasan, Bob Odyssey, clipboard">
+  <meta name="Description" content="A clipboard on the HopHopHasan website.">
+  <link href="https://hophophasan.tk/" rel="canonical">
+  <!--load files-->
+  <link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="scripts/checktheme.js"></script>
+  <div class="alert success">
+    <span class="closebtn">&times;</span>  
+    <span class="infoimage"><img src="https://rawcdn.githack.com/HopHopHasan/HopHopHasanWebsite/cb3ded2c6391ac0a284c37262d400c2dc960a600/images/EpicInAWorldOfFail.jpg" width="80"></span>
+    <span class="infotext"><br><strong>Please note!</strong> You must have javascript enabled to see the following result!<br></span>
+    <div id="javascript">Javascript is disabled... uh oh...</div>
+    <script>
+      document.getElementById("javascript").innerHTML = "Javascript is enabled! Nice!";
+    </script>
+    <br>
+  </div>
+  
+  <script>
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+      }
+    }
+  </script>
+
+  <p><b>Here is the data sent by the game: </b></p>
+  <script>
+    var url = window.location.href;
+    let paramaters = (new URL(url)).searchParams;
+    var report = paramaters.get("report");
+    var username = paramaters.get("username");
+  </script>
+  <div style="height:200px;font-size:15px;font-family:monospace;overflow-y:scroll;">
+    <script>document.write(report)</script>
+  </div>
+  Your username: <script>document.write(username)</script>
+  <br>
+  <p><b>Triple click to select all of the text, then use CTRL+C or COMMAND+C to copy it.</b></p>
+</body>
+</html>
