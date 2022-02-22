@@ -3,9 +3,20 @@ body {
   color: black;
 }
 .darkmode {
-  background-color: #0F0F0F;
+  background-color: #191919;
   color: white;
 }
+a:link {
+  color: #6390f1;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #14e2f1;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 
 @font-face {
   font-family: "AntioStd";
