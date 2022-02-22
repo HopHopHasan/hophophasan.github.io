@@ -14,5 +14,15 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <script src="scripts/checktheme.js"></script>
+<script>
+  if (localStorage.darkmode == 0) {
+    document.getElementById("darkmode").innerHTML = "Dark mode disabled";
+    console.log("Dark mode disabled");
+  } else {
+	document.getElementById("darkmode").innerHTML = "Dark mode enabled";
+    console.log("Dark mode enabled");
+  }
+</script>
+<div id="darkmode"></div>
 <p id="SeuratCapie">Bob Test</p>
 <iframe src="bobtests/Bob Perf Test 13/index.html" width="640" height="360" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
