@@ -1,10 +1,11 @@
 # hophophasan.github.io
 This is the repository for the website [hophophasan.tk](https://hophophasan.tk).
 ## To do:
-- add file backup section
-- add "social" links
-- game list page
-- add proper "settings" page
-- (if needed) add cookie/storage prompt
-- properly link, make blog.hophophasan independent and rewrite it
-- mobile screen view
+- Add additional pages
+  - Add file backup section
+  - Add "social" links
+  - Game list and completion page
+  - Add proper "settings" page
+- Add cookie/storage prompt (if required) 
+- Rewrite [blog.hophophasan.tk](https://blog.hophophasan.tk) (this will remove comments so try to find a solution for that)
+- Mobile screen view
