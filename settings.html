@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Settings</title>
+  <!--metadata-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Keywords" content="HopHopHasan, blog, website, Hasan, Bob Odyssey, clipboard, settings">
+  <meta name="Description" content="The settings page on the HopHopHasan website.">
+  <meta name="color-scheme" content="dark light">
+  <link href="https://hophophasan.tk/" rel="canonical">
+  <!--load files-->
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="style.css">
+  <!--load the external js file so you can call its function later-->
+  <script type="text/javascript" src="scripts/setdarkmode.js"></script>
+  <script type="text/javascript" src="scripts/deletewebstorage.js"></script>
+  <script type="text/javascript" src="scripts/clock.js"></script>
+</head>
+<body>
+  <script src="scripts/checktheme.js"></script>
+  <h1>Settings</h1>
+  <h2>Page theme</h2>
+  <p>Change between a light and a dark theme for the whole site: 
+  <button onclick="updateTheme()" type="button"><div id="theme">Toggle darkmode</div></button></p>
+  <h2>Delete web storage</h2>
+  <p>Delete all local storage this page has kept on your device. This will reset preferences and other options:
+  <button onclick="startDeleteWebStorage()" type="button"><div id="storage">Delete web storage</div></button></p>
+  <h2>Check for page updates</h2>
+  <p>Reload the page from the server (for debugging):
+  <button onclick="reloadPage()" type="button"><div id="reload">Reload page</div></button></p>
+  <!--Run all the scripts for these buttons-->
+  <script>
+    //check theme and change button accordingly
+    if (localStorage.darkmode == 1){
+	    document.getElementById("theme").innerHTML = "Change to light theme";
+	}
+	else {
+	    document.getElementById("theme").innerHTML = "Change to dark theme";
+	}
+	
+    function updateTheme() {
+	  setDarkMode();
+	  if (localStorage.darkmode == 1){
+	    document.getElementById("theme").innerHTML = "Change to light theme";
+	  }
+	  else {
+	    document.getElementById("theme").innerHTML = "Change to dark theme";
+	  }
+	}
+	
+	function startDeleteWebStorage() {
+	  document.getElementById("storage").innerHTML = "Deleting...";
+	  deleteWebStorage();
+	  document.getElementById("storage").innerHTML = "Done.";
+	  document.location.reload(true)
+	}
+	
+	function reloadPage() {
+	  document.getElementById("reload").innerHTML = "Reloading...";
+	  document.location.reload(true)
+    }
+  </script>
