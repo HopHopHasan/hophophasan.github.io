@@ -17,7 +17,7 @@
   <!--load the external js file so you can call its function later-->
   <script type="text/javascript" src="scripts/setdarkmode.js"></script>
   <script type="text/javascript" src="scripts/deletewebstorage.js"></script>
-  <script type="text/javascript" src="scripts/clock.js"></script>
+  <script type="text/javascript" src="scripts/usertime.js"></script>
 </head>
 <body>
   <script src="scripts/checktheme.js"></script>
@@ -27,6 +27,12 @@
   <button onclick="updateTheme()" type="button"><div id="theme">Toggle darkmode</div></button></p>
   <h2>Delete web storage</h2>
   <p>Delete all local storage this page has kept on your device. This will reset preferences and other options:
+  <h3>Current data:</h3>
+  Time: <span id="time"></span><br>
+  Total overall time spent on site: <span id="allUserTime"></span> seconds<br>
+  Total session time spent on site: <span id="passiveSession"></span> seconds<br>
+  Current theme: <span id="themeStatus"></span><br>
+  Counter: <span id="counter"></span></p>
   <button onclick="startDeleteWebStorage()" type="button"><div id="storage">Delete web storage</div></button></p>
   <h2>Check for page updates</h2>
   <p>Reload the page from the server (for debugging):
@@ -34,21 +40,34 @@
   <!--Run all the scripts for these buttons-->
   <script>
     //check theme and change button accordingly
-    if (localStorage.darkmode == 1){
-	    document.getElementById("theme").innerHTML = "Change to light theme";
-	}
-	else {
-	    document.getElementById("theme").innerHTML = "Change to dark theme";
-	}
+	displayClock();
+	updateUserTime();
+	updatePassiveSessionTime();
+	updateAllStorageStatus();
 	
+	function updateAllStorageStatus() {
+      if (localStorage.darkmode == 1){
+	      document.getElementById("theme").innerHTML = "Change to light theme";
+	      document.getElementById("themeStatus").innerHTML = "Dark";
+	  } else {
+	      document.getElementById("theme").innerHTML = "Change to dark theme";
+		  document.getElementById("themeStatus").innerHTML = "Light";
+	  }
+	  if (localStorage.getItem("clickcount") === null) {
+	    document.getElementById("counter").innerHTML = "Has not been clicked";
+	  } else {
+	    document.getElementById("counter").innerHTML = localStorage.clickcount;
+	  }
+	}
+		
     function updateTheme() {
 	  setDarkMode();
 	  if (localStorage.darkmode == 1){
 	    document.getElementById("theme").innerHTML = "Change to light theme";
-	  }
-	  else {
+	  } else {
 	    document.getElementById("theme").innerHTML = "Change to dark theme";
 	  }
+	  updateAllStorageStatus();
 	}
 	
 	function startDeleteWebStorage() {

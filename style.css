@@ -19,17 +19,7 @@ h2 {
   color: white;
 }
 :root {
-  color-scheme: light dark; /* both supported */
-}
-a:link {
-  color: #6390f1;
-  background-color: transparent;
-  text-decoration: none;
-}
-a:visited {
-  color: #14e2f1;
-  background-color: transparent;
-  text-decoration: none;
+  color-scheme: light dark;
 }
 
 /*loaded fonts*/

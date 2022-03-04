@@ -1,4 +1,3 @@
-  function deleteWebStorage() {
-    localStorage.removeItem("darkmode");
-    localStorage.removeItem("clickcount");
-  }
+function deleteWebStorage() {
+	localStorage.clear();
+}
