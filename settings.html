@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="style.css">
-  <!--load the external js file so you can call its function later-->
+  <!--load the external js files so you can call its function later-->
   <script type="text/javascript" src="scripts/setdarkmode.js"></script>
   <script type="text/javascript" src="scripts/deletewebstorage.js"></script>
   <script type="text/javascript" src="scripts/usertime.js"></script>
@@ -39,46 +39,45 @@
   <button onclick="reloadPage()" type="button"><div id="reload">Reload page</div></button></p>
   <!--Run all the scripts for these buttons-->
   <script>
-    //check theme and change button accordingly
-	displayClock();
-	updateUserTime();
-	updatePassiveSessionTime();
-	updateAllStorageStatus();
-	
-	function updateAllStorageStatus() {
+    displayClock();
+    updateUserTime();
+    updatePassiveSessionTime();
+    updateAllStorageStatus();
+    
+    function updateAllStorageStatus() {
       if (localStorage.darkmode == 1){
-	      document.getElementById("theme").innerHTML = "Change to light theme";
-	      document.getElementById("themeStatus").innerHTML = "Dark";
-	  } else {
-	      document.getElementById("theme").innerHTML = "Change to dark theme";
-		  document.getElementById("themeStatus").innerHTML = "Light";
-	  }
-	  if (localStorage.getItem("clickcount") === null) {
-	    document.getElementById("counter").innerHTML = "Has not been clicked";
-	  } else {
-	    document.getElementById("counter").innerHTML = localStorage.clickcount;
-	  }
-	}
-		
+        document.getElementById("theme").innerHTML = "Change to light theme";
+        document.getElementById("themeStatus").innerHTML = "Dark";
+      } else {
+          document.getElementById("theme").innerHTML = "Change to dark theme";
+        document.getElementById("themeStatus").innerHTML = "Light";
+      }
+      if (localStorage.getItem("clickcount") === null) {
+        document.getElementById("counter").innerHTML = "Has not been clicked";
+      } else {
+        document.getElementById("counter").innerHTML = localStorage.clickcount;
+      }
+    }
+      
     function updateTheme() {
-	  setDarkMode();
-	  if (localStorage.darkmode == 1){
-	    document.getElementById("theme").innerHTML = "Change to light theme";
-	  } else {
-	    document.getElementById("theme").innerHTML = "Change to dark theme";
-	  }
-	  updateAllStorageStatus();
-	}
-	
-	function startDeleteWebStorage() {
-	  document.getElementById("storage").innerHTML = "Deleting...";
-	  deleteWebStorage();
-	  document.getElementById("storage").innerHTML = "Done.";
-	  document.location.reload(true)
-	}
-	
-	function reloadPage() {
-	  document.getElementById("reload").innerHTML = "Reloading...";
-	  document.location.reload(true)
+      setDarkMode();
+      if (localStorage.darkmode == 1){
+        document.getElementById("theme").innerHTML = "Change to light theme";
+      } else {
+        document.getElementById("theme").innerHTML = "Change to dark theme";
+      }
+      updateAllStorageStatus();
+    }
+    
+    function startDeleteWebStorage() {
+      document.getElementById("storage").innerHTML = "Deleting...";
+      deleteWebStorage();
+      document.getElementById("storage").innerHTML = "Done.";
+      document.location.reload(true)
+    }
+    
+    function reloadPage() {
+      document.getElementById("reload").innerHTML = "Reloading...";
+      document.location.reload(true)
     }
   </script>

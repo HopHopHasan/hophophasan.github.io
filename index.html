@@ -14,9 +14,8 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="style.css">
-  <!--load the external js file so you can call its function later-->
+  <!--load the external js files so you can call its function later-->
   <script type="text/javascript" src="scripts/setdarkmode.js"></script>
-  <script type="text/javascript" src="scripts/deletewebstorage.js"></script>
   <script type="text/javascript" src="scripts/usertime.js"></script>
 </head>
 <body>
@@ -32,26 +31,25 @@
   Current time: <span id="time"></span><br>
   <span id="result"></span>
   <script>
-  displayClock();
-  passiveUserTime();
-  passiveSessionTime();
+    displayClock();
+    passiveUserTime();
+    passiveSessionTime();
   </script>
   <script>
-  function clickCounter() {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-	if (localStorage.clickcount == 1){
-	  document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time.";
-	} else {
-	  document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " times.";
-	}
-  }
+    function clickCounter() {
+      if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+      } else {
+        localStorage.clickcount = 1;
+      }
+	    if (localStorage.clickcount == 1){
+	      document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time.";
+	    } else {
+	      document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " times.";
+	    }
+    } 
   </script>
   <p><button onclick="clickCounter()" type="button">Click me!</button></p>
   <p><button onclick="setDarkMode()" type="button">Toggle darkmode</button></p>
-  <p><button onclick="deleteWebStorage()" type="button">Delete web storage</button></p>
 </body>
 </html>
