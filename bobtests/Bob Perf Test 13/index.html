@@ -194,7 +194,7 @@
       setProgress(0.1);
 
       const scaffolding = new Scaffolding.Scaffolding();
-      scaffolding.width = 480;
+      scaffolding.width = 640;
       scaffolding.height = 360;
       scaffolding.resizeMode = "preserve-ratio";
       scaffolding.editableLists = false;
@@ -217,10 +217,11 @@
 
       {const providers = {};
 providers.local = new Scaffolding.Cloud.LocalStorageProvider("cloudvariables:p4-@Bob Perf Test 13.sb3");
+providers.ws = new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@Bob Perf Test 13.sb3");
 for (const provider of Object.values(providers)) scaffolding.addCloudProvider(provider);
 scaffolding.addCloudProviderOverride("☁ open link", providers["local"] || null);
 scaffolding.addCloudProviderOverride("☁ SaveData", providers["local"] || null);
-scaffolding.addCloudProviderOverride("☁ url", providers["local"] || null);
+scaffolding.addCloudProviderOverride("☁ GlobalCloudStorage", providers["ws"] || null);
 };
 
       if (document.fullscreenEnabled || document.webkitFullscreenEnabled) {
