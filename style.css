@@ -1,8 +1,8 @@
 body {
   background-color: white;
   color: black;
-  -webkit-transition: background-color 0.2s linear, color 0.5s linear;
-  transition: background-color 0.2s linear, color 0.5s linear;
+  /*-webkit-transition: background-color 0.2s linear, color 0.5s linear;
+  transition: background-color 0.2s linear, color 0.5s linear;*/
 }
 html * {
   font-family: 'Open Sans', sans-serif;
