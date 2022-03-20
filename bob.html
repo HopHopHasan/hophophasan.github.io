@@ -10,28 +10,55 @@
   <meta name="color-scheme" content="dark light">
   <link href="https://hophophasan.tk/" rel="canonical">
   <!--load files-->
-  <link rel="icon" href="resources/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+  body{
+    background-image: url('resources/BobPinkTrees.gif');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+  }
+  img {
+    opacity: 0.9;
+  }
+  div.ScrollBox {
+    height:200px;
+    max-width:800px;
+    width: auto;
+    font-size:15px;
+    margin: auto;
+    overflow-y:scroll;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(100, 100, 100, 0.3); 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0, 0.7); 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0); 
+  }
+
+</style>
 <body>
   <script src="scripts/checktheme.js"></script>
-  <script>
-    if (localStorage.darkmode == 0) {
-      document.getElementById("darkmode").innerHTML = "Dark mode disabled";
-      console.log("Dark mode disabled");
-    } else {
-	  document.getElementById("darkmode").innerHTML = "Dark mode enabled";
-      console.log("Dark mode enabled");
-    }
-  </script>
-  <p id="SeuratCapie">Bob Tests</p>
-  <p><img src="bobtests/TownBanner.jpg"></p>
+  <p id="SeuratCapie"><img src="resources/icons/BobIcon.png"> Bob Tests <img src="resources/icons/BobIcon2.png"><br><span style="font-size:15px;"><a href="index.html">Go back</a></span></p>
+  <p><img src="bobtests/TownBanner.jpg" style="max-width: 800px; height:auto; width:100%"></p>
   <p>Here is a series of performance tests for Bob Odyssey. You can run them in your browser.</p>
   <p>Check out upcoming features at: <a href="https://trello.com/b/IT2exbkB/bob-odyssey-updates">https://trello.com/b/IT2exbkB/bob-odyssey-updates</a><br>
   Also play these versions at: <a href="https://hophophasan.itch.io/bob-performance-test">https://hophophasan.itch.io/bob-performance-test</a></p>
   <h2><a id="SeuratCapie" href="bobtests/PerformanceTest13.html">Performance Test 13</a></h2></p>
-  <div style="height:200px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 14/3/21 (Perf 13)</p>
     <li>Made tweaks to the FPS scaling ( no more clipping at very low framerates ! )</li>
     <li>Adjusted screen scaling to always check resolution</li>
@@ -47,7 +74,7 @@
     <li>Fixed camera lock shaking</li>
   </div>
   <p></p>
-  <div style="height:200px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 28/1/21 (Perf 12)</p>
     <li>NPC prompt no longer jidders in place</li>
     <li>Tweaked physics</li>
@@ -61,7 +88,7 @@
     <li>UI now adjusts in widescreen</li>
   </div>
   <p></p>
-  <div style="height:200px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 24/1/21 (Perf 11)</p>
     <li>Fixed some bugs</li>
     <li>Optimised file sizes</li>
@@ -74,7 +101,7 @@
     <li>Timezones</li>
   </div>
   <p></p>
-  <div style="height:200px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 23/1/21 (Perf 10)</p>
     <li>Fixed jittering when sliding</li>
     <li>Fixed Bob hitbox position</li>
@@ -84,7 +111,7 @@
     <li>General code optimisation</li>
   </div>
   <p></p>
-  <div style="height:200px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 21/1/21 (Perf 9)</p>
     <li>Added saving of shards and player position</li>
     <li>Made loading faster</li>
@@ -101,13 +128,13 @@
     <li>Tweaked particles</li>
   </div>
   <p></p>
-  <div style="height:100px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 17/1/21 (Perf 8)</p>
     <li>Stage and objects are sharper</li>
     <li>Stage now culls</li>
   </div>
   <p></p>
-  <div style="height:200px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 26/12/21 (Perf 7)</p>
     <li>Fixed groundpound jumping being delayed</li>
     <li>Fixed ground particles being in wrong position</li>
@@ -116,7 +143,7 @@
     <li>Fixed subtitles sometimes breaking</li>
   </div>
   <p></p>
-  <div style="height:200px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 30/11/21 (Perf 6)</p>
     <li>Fixed walljumping not registering sometimes</li>
     <li>Groundpounding is faster</li>
@@ -124,21 +151,21 @@
     <li>Fixed shard culling</li>
   </div>
   <p></p>
-  <div style="height:200px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 27/11/21 (Perf 5)</p>
     <li>Changed walljumping and sliding physics</li>
     <li>Groundpounding is more responsive</li>
     <li>Particles for wallsliding</li>
   </div>
   <p></p>
-  <div style="height:200px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 27/11/21 (Perf 4)</p>
     <li>Improved pre-loading</li>
     <li>Reduced FPS dips when switching levels</li>
     <li>Fixed pause menu sometimes not sizing correctly</li>
   </div>
   <p></p>
-  <div style="height:200px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 26/11/21 (Perf 3)</p>
     <li>Implemented a more accurate FPS counter</li>
     <li>Improved culling</li>
@@ -148,12 +175,12 @@
     <li>Tweaked some animations</li>
   </div>
   <p></p>
-  <div style="height:100px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 25/11/21 (Perf 2)</p>
     <li>Improved performance significantly</li>
   </div>
   <p></p>
-  <div style="height:200px;font-size:15px;overflow-y:scroll;">
+  <div class="ScrollBox">
     <p id="SeuratCapie">CHANGELOG 25/11/21 (Perf 1)</p>
     <li>Particles now scale at stage sizes</li>
     <li>Water physics improved</li>

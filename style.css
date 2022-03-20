@@ -27,16 +27,9 @@ h2 {
   font-family: "SeuratCapie";
   src: url("SeuratCapie.otf");
 }
-@font-face {
-  font-family: "HeyGorgeous";
-  src: url("HeyGorgeous.ttf");
-}
 #SeuratCapie {
   font-family: 'SeuratCapie';
   line-height: 1.2;
-}
-#HeyGorgeous {
-  font-family: 'HeyGorgeous';
 }
 
 /*alert banner UI*/
