@@ -44,23 +44,19 @@ h2 {
   margin: auto;
   margin-top: 25px;
 }
-
 .alert.success {background-color: #04AA6D;}
 .alert.info {background-color: #2196F3;}
 .alert.warning {background-color: #ff9800;}
 .alert.fail {background-color: #ff7057;}
-
 .infotext {
   font-size: 15px;
   transition: 0.3s;
 }
-  
 .infoimage {
  float: left;
  transition: 0.3s;
  padding: 3px;
 }
-  
 .closebtn {
   padding: 5px;
   font-weight: bold;
@@ -70,7 +66,6 @@ h2 {
   cursor: pointer;
   transition: 0.3s;
 }
-
 .closebtn:hover {
   color: #252525;
 }
