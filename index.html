@@ -2,12 +2,11 @@
 <html>
 <head>
   <title>HopHopHasan</title>
-	<!--metadata-->
+  <!--metadata-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="Keywords" content="HopHopHasan, blog, website, Hasan, Bob Odyssey, clipboard, settings">
   <meta name="Description" content="This is the HopHopHasan website, which also contains a blog site.">
-  <meta name="color-scheme" content="dark light">
   <link href="https://hophophasan.tk/" rel="canonical">
   <!--load files-->
   <link rel="icon" href="favicon.ico" type="image/x-icon"> 
@@ -15,12 +14,44 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="style.css">
   <!--load the external js files so you can call its function later-->
-  <script type="text/javascript" src="scripts/setdarkmode.js"></script>
   <script type="text/javascript" src="scripts/usertime.js"></script>
 </head>
+<style>
+  body{
+    background-image: url('resources/backgrounds/EndZone.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+  }
+  img{
+    opacity: 0.9;
+  }
+  div.ScrollBox {
+    height:200px;
+    max-width:800px;
+    width: auto;
+    font-size:15px;
+    margin: auto;
+    overflow-y:scroll;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(15, 15, 15, 1); 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(50, 50, 50, 0.8); 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(30, 30, 30, 0.8); 
+  }
+</style>
 <body>
-  <script src="scripts/checktheme.js"></script>
-  <p><a href="https://blog.hophophasan.tk"><img src="resources/icons/BlogIcon.png">Blog<img src="resources/icons/BlogIcon.png"></a> | <a href="downloads.html"><img src="resources/icons/DownloadIcon.png">Downloads<img src="resources/icons/DownloadIcon.png"></a> | <a href="bob.html"><img src="resources/icons/BobIcon.png">Bob Test<img src="resources/icons/BobIcon2.png"></a> | <a href="settings.html"><img src="resources/icons/SettingsIcon.png">Settings<img src="resources/icons/SettingsIcon.png"></a>
+  <p><a href="https://blog.hophophasan.tk"><img src="resources/icons/BlogIcon.png" id="imagepixel">Blog<img src="resources/icons/BlogIcon.png" id="imagepixel"></a> | <a href="downloads.html"><img src="resources/icons/DownloadIcon.png" id="imagepixel">Downloads<img src="resources/icons/DownloadIcon.png" id="imagepixel"></a> | <a href="bob.html"><img src="resources/icons/BobIcon.png" id="imagepixel">Bob Test<img src="resources/icons/BobIcon2.png" id="imagepixel"></a> | <a href="settings.html"><img src="resources/icons/SettingsIcon.png" id="imagepixel">Settings<img src="resources/icons/SettingsIcon.png" id="imagepixel"></a>
   <h1>HTML5?</h1>
   <p>This website is being built! Please be patient!<br>
   Send any ideas to my email: <a href="mailto:hasmaj16@gmail.com">hasmaj16@gmail.com</a>.</p>
@@ -48,6 +79,5 @@
     } 
   </script>
   <p><button onclick="clickCounter()" type="button">Click me!</button></p>
-  <p><button onclick="setDarkMode()" type="button">Toggle darkmode</button></p>
 </body>
 </html>

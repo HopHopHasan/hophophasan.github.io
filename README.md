@@ -10,8 +10,7 @@ This is the repository for the website [hophophasan.tk](https://hophophasan.tk).
   - Game list and completion page
   - Add LEGAL (satire) page, and also policies about cookies
   - Add a changelog page
-  - Add proper "settings" page
 - Add a full site map (includes blog.hophophasan)
 - Add cookie/storage prompt (if required) 
 - Rewrite [blog.hophophasan.tk](https://blog.hophophasan.tk) (this will remove comments so try to find a solution for that)
-- Add a mobile screen view
+- Optimise for mobile displays

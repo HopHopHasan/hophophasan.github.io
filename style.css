@@ -1,8 +1,6 @@
 body {
-  background-color: white;
-  color: black;
-  /*-webkit-transition: background-color 0.2s linear, color 0.5s linear;
-  transition: background-color 0.2s linear, color 0.5s linear;*/
+  background-color: #191919;
+  color: white;
 }
 html * {
   font-family: 'Open Sans', sans-serif;
@@ -14,15 +12,31 @@ h1 {
 h2 {
   font-size: 20px;
 }
-.darkmode {
+.lightmode {
   background-color: #191919;
   color: white;
 }
 :root {
   color-scheme: light dark;
 }
+#imagepixel {
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+}
 
-/*loaded fonts*/
+/*link colours*/
+a:link {
+  color: #ff6666;
+}
+a:visited {
+  color: #ff8a8a;
+}
+a:hover {
+  color: #ff4545;
+}
+
+/*load fonts*/
 @font-face {
   font-family: "SeuratCapie";
   src: url("SeuratCapie.otf");
@@ -31,6 +45,8 @@ h2 {
   font-family: 'SeuratCapie';
   line-height: 1.2;
 }
+/*Add version of font which only has ENGLISH chars for quicker loading
+use the CJK only when needed*/
 
 /*alert banner UI*/
 .alert {
