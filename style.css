@@ -25,6 +25,29 @@ h2 {
 	image-rendering: crisp-edges;
 }
 
+/*scroll bar colour*/
+div.ScrollBox {
+  height:200px;
+  max-width:800px;
+  width: auto;
+  font-size:15px;
+  margin: auto;
+  overflow-y:scroll;
+  background: rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 15, 15, 1); 
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(50, 50, 50, 0.8); 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(30, 30, 30, 0.8); 
+}
+
 /*link colours*/
 a:link {
   color: #ff6666;

@@ -28,27 +28,6 @@
   img{
     opacity: 0.9;
   }
-  div.ScrollBox {
-    height:200px;
-    max-width:800px;
-    width: auto;
-    font-size:15px;
-    margin: auto;
-    overflow-y:scroll;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  ::-webkit-scrollbar {
-    width: 15px;
-  }
-  ::-webkit-scrollbar-track {
-    background: rgba(15, 15, 15, 1); 
-  }
-  ::-webkit-scrollbar-thumb {
-    background: rgb(50, 50, 50, 0.8); 
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(30, 30, 30, 0.8); 
-  }
 </style>
 <body>
   <p><a href="https://blog.hophophasan.tk"><img src="resources/icons/BlogIcon.png" id="imagepixel">Blog<img src="resources/icons/BlogIcon.png" id="imagepixel"></a> | <a href="downloads.html"><img src="resources/icons/DownloadIcon.png" id="imagepixel">Downloads<img src="resources/icons/DownloadIcon.png" id="imagepixel"></a> | <a href="bob.html"><img src="resources/icons/BobIcon.png" id="imagepixel">Bob Test<img src="resources/icons/BobIcon2.png" id="imagepixel"></a> | <a href="settings.html"><img src="resources/icons/SettingsIcon.png" id="imagepixel">Settings<img src="resources/icons/SettingsIcon.png" id="imagepixel"></a>
@@ -57,27 +36,12 @@
   Send any ideas to my email: <a href="mailto:hasmaj16@gmail.com">hasmaj16@gmail.com</a>.</p>
   <a href="https://blog.hophophasan.tk" target="_blank" rel="noopener noreferrer">Check out the blog site.</a>
   <a href="bob.html" target="_blank" rel="noopener noreferrer">Check out Bob Test.</a><br>
-  Current time: <span id="time"></span><br>
   <span id="result"></span>
-  <script>
-    displayClock();
-    passiveUserTime();
-    passiveSessionTime();
-  </script>
-  <script>
-    function clickCounter() {
-      if (localStorage.clickcount) {
-        localStorage.clickcount = Number(localStorage.clickcount)+1;
-      } else {
-        localStorage.clickcount = 1;
-      }
-	    if (localStorage.clickcount == 1){
-	      document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time.";
-	    } else {
-	      document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " times.";
-	    }
-    } 
-  </script>
-  <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+  <p><img src="resources/gif/sponge.gif" width="25%"><br>My face when I have to code this website.</p>
+  <br>
+  <p><img src="resources/gif/banana.gif" width="10%"><img src="resources/gif/banana.gif" width="10%"><img src="resources/gif/banana.gif" width="10%"><img src="resources/gif/banana.gif" width="10%"><img src="resources/gif/banana.gif" width="10%"><img src="resources/gif/banana.gif" width="10%"><img src="resources/gif/banana.gif" width="10%"><img src="resources/gif/banana.gif" width="10%"><img src="resources/gif/banana.gif" width="10%"><br>This banana is funny, right click to download it to your device!</p>
+  <br>
+  <p><img src="resources/gif/anykey.gif" width="25%"><br>Me after I disappear for a week and forget everything</p>
+  <br>
 </body>
 </html>
