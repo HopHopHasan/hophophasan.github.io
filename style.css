@@ -1,3 +1,4 @@
+/*set background colours, set font, alignment and sizes*/
 body {
   background-color: #191919;
   color: white;
@@ -12,13 +13,22 @@ h1 {
 h2 {
   font-size: 20px;
 }
+/*resize all videos to fit all screens*/
+video {
+  height: 80%;
+  width: 80%;
+  object-fit: fill;
+}
+/*unused lightmode*/
 .lightmode {
   background-color: #191919;
   color: white;
 }
+/*ask browser to change button colours*/
 :root {
   color-scheme: light dark;
 }
+/*nearest neighbour pixel scaling for pixel art*/
 #imagepixel {
 	image-rendering: pixelated;
 	image-rendering: -moz-crisp-edges;
