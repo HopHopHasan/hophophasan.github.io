@@ -12,5 +12,5 @@ This is the repository for the website [hophophasan.tk](https://hophophasan.tk).
   - Add a changelog page
 - Add a full site map (includes blog.hophophasan)
 - Add cookie/storage prompt (if required) 
-- Rewrite [blog.hophophasan.tk](https://blog.hophophasan.tk) (use MIIVERSE2TURBOWARP EMBED for comments, although these will need to be backed up, or not if the comments are designed to be temporary)
+- Rewrite [blog.hophophasan.tk](https://blog.hophophasan.tk) (use MIIVERSE2TURBOWARP EMBED for comments, although these will need to be backed up, or not if the comments are designed to be temporary, you can also use an IFRAME with PHP code running on another server ( like firebase ) to store comments  [https://stackoverflow.com/a/51584982])
 - Optimise for mobile displays
