@@ -12,5 +12,5 @@ This is the repository for the website [hophophasan.tk](https://hophophasan.tk).
   - Add a changelog page
 - Add a full site map (includes blog.hophophasan)
 - Add cookie/storage prompt (if required) 
-- Rewrite [blog.hophophasan.tk](https://blog.hophophasan.tk) (this will remove comments so try to find a solution for that)
+- Rewrite [blog.hophophasan.tk](https://blog.hophophasan.tk) (use MIIVERSE2TURBOWARP EMBED for comments, although these will need to be backed up, or not if the comments are designed to be temporary)
 - Optimise for mobile displays
