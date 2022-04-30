@@ -13,6 +13,9 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="style.css">
+  <!--load the external js files so you can call its function later-->
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
+  <script type="text/javascript" src="scripts/googletranslate.js"></script>  
 </head>
 <style>
   body{
@@ -28,7 +31,12 @@
   }
 </style>
 <body>
-  <p id="SeuratCapie"><img src="resources/icons/BobIcon.png" id="imagepixel"> Bob Tests <img src="resources/icons/BobIcon2.png" id="imagepixel"><br><span style="font-size:15px;"><a href="index.html">Go back</a></span></p>
+  <span class="header">
+    <span style="font-size:15px;"><a href="index.html">Back</a></span>
+  </span>
+  <span class="header">
+    <span id="SeuratCapie"><img src="resources/icons/BobIcon.png" id="imagepixel"> Bob Tests <img src="resources/icons/BobIcon2.png" id="imagepixel"></span>
+  </span>
   <p><img src="bobtests/TownBanner.jpg" style="max-width: 650px; height:auto; width:100%"></p>
   <p>Here is a series of performance tests for Bob Odyssey. You can run them in your browser.</p>
   <p>Check out upcoming features at: <a href="https://trello.com/b/IT2exbkB/bob-odyssey-updates" target="_blank" rel="noopener noreferrer">https://trello.com/b/IT2exbkB/bob-odyssey-updates</a><br>
@@ -187,6 +195,9 @@
     <li>Made loading into world significantly faster</li>
     <br>
   </div>
-  <p></p>
+  <br><br>
+  <span class="translatebox">
+    <span id="google_translate_element"></span>
+  </span>
 </body>
 </html>

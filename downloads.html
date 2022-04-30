@@ -17,6 +17,9 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="style.css">
+  <!--load the external js files so you can call its function later-->
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
+  <script type="text/javascript" src="scripts/googletranslate.js"></script>
 </head>
 <style>
   body{
@@ -32,7 +35,12 @@
   }
 </style>
 <body>
-  <p id="SeuratCapie"><img src="resources/icons/DownloadIcon.png" id="imagepixel"> Downloads <img src="resources/icons/DownloadIcon.png" id="imagepixel"><br><span style="font-size:15px;"><a href="index.html">Go back</a></span></p>
+  <span class="header">
+    <span style="font-size:15px;"><a href="index.html">Back</a></span>
+  </span>
+  <span class="header">
+    <span id="SeuratCapie"><img src="resources/icons/DownloadIcon.png" id="imagepixel"> Downloads <img src="resources/icons/DownloadIcon.png" id="imagepixel"></span>
+  </span>
   <h2 id="SeuratCapie">HopHopHasan Tweaks Resource Pack for Minecraft Bedrock</h2>
   <img src="resources/HopHopHasanTweaksBanner.png" style="max-width: 800px; height:auto; width:100%">
   <p>Several changes and tweaks to the base game, that improve the gameplay experience.</p>
@@ -73,4 +81,8 @@
   <br>
   <h2 id="SeuratCapie">Ignore this: this is a test!</h2>
   <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0budGAbM4lws2cp8UfPq30?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow=""></iframe>
+  <span class="translatebox">
+    <span id="google_translate_element"></span>
+  </span>
 </body>
+

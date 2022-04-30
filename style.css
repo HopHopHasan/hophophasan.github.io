@@ -35,6 +35,42 @@ video {
 	image-rendering: crisp-edges;
 }
 
+/*sticky header*/
+.header {
+  position: sticky;
+  left: 0;
+  top: 5px;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  text-align: center;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/*translatebox*/
+.translatebox {
+  position: fixed;
+  left: 0;
+  bottom: -20px;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  float: right;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/*footer*/
+.footer {
+  position: sticky;
+  left: 0;
+  bottom: -17px;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  text-align: center;
+  padding: 1px;
+}
+
 /*scroll bar colour*/
 div.ScrollBox {
   height:200px;

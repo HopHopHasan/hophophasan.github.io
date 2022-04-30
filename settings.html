@@ -15,16 +15,30 @@
   <link rel="stylesheet" href="style.css">
   <!--load the external js files so you can call its function later-->
   <script type="text/javascript" src="scripts/deletewebstorage.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
+  <script type="text/javascript" src="scripts/googletranslate.js"></script>
 </head>
 <body>
-  <p id="SeuratCapie"><img src="resources/icons/SettingsIcon.png" id="imagepixel"> Settings <img src="resources/icons/SettingsIcon.png" id="imagepixel"><br><span style="font-size:15px;"><a href="index.html">Go back</a></span></p>
+  <span class="header">
+    <span style="font-size:15px;"><a href="index.html">Back</a></span>
+  </span>
+  <span class="header">
+    <span id="SeuratCapie"><img src="resources/icons/SettingsIcon.png" id="imagepixel"> Settings <img src="resources/icons/SettingsIcon.png" id="imagepixel"></span>
+  </span>
   <h2>Check for page updates</h2>
-  <p id="SeuratCapie">HASEEB WAS HERE!!!!!</p>
+  Your IP address: <span id="IP">Fetching...</span><br>
   <p>Reload the page from the server (for debugging):
   <button onclick="reloadPage()" type="button"><div id="reload">Reload page</div></button></p>
+  <span class="translatebox">
+    <span id="google_translate_element"></span>
+  </span>
   <script>
     function reloadPage() {
       document.getElementById("reload").innerHTML = "Reloading...";
       document.location.reload(true)
     }
+    
+    $.get("https://ipinfo.io", function(response) {document.getElementById("IP").innerHTML = response.ip;}, "json")
   </script>
+</body>
