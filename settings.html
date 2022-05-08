@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="style.css">
   <!--load the external js files so you can call its function later-->
-  <script type="text/javascript" src="scripts/deletewebstorage.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
   <script type="text/javascript" src="scripts/googletranslate.js"></script>
@@ -30,15 +29,22 @@
   Your IP address: <span id="IP">Fetching...</span><br>
   <p>Reload the page from the server (for debugging):
   <button onclick="reloadPage()" type="button"><div id="reload">Reload page</div></button></p>
+  <p>Clear web storage and cookies:
+  <button onclick="deleteWebStorage()" type="button"><div id="clear">Clear</div></button></p>
   <span class="translatebox">
-    <span id="google_translate_element"></span>
+    <div style="float:right" id="google_translate_element"></div>
+    <img src="resources/icons/TranslateIcon.png" id="imagepixel" style="float:right" >
   </span>
   <script>
+    $.get("https://ipinfo.io", function(response) {document.getElementById("IP").innerHTML = response.ip;}, "json")
     function reloadPage() {
       document.getElementById("reload").innerHTML = "Reloading...";
       document.location.reload(true)
     }
-    
-    $.get("https://ipinfo.io", function(response) {document.getElementById("IP").innerHTML = response.ip;}, "json")
+    function deleteWebStorage() {
+	    localStorage.clear();
+      document.getElementById("clear").innerHTML = "Clearing...";
+      document.location.reload(true)
+    }
   </script>
 </body>

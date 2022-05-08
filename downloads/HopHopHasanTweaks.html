@@ -10,34 +10,28 @@
   <link href="https://hophophasan.tk/" rel="canonical">
   <!--load files-->
   <link rel="icon" href="../resources/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="../style.css">
+  <!--load the external js files so you can call its function later-->
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
+  <script type="text/javascript" src="../scripts/googletranslate.js"></script>  
 </head>
 <style>
   body{
     background-image: url('../resources/backgrounds/MinecraftFog.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-blend-mode: overlay;
   }
-  img{
-    opacity: 0.9;
+  div.ScrollBox {
+    height:300px;
   }
 </style>
 <body>
-  <script>
-    if (localStorage.darkmode == 0) {
-      document.getElementById("darkmode").innerHTML = "Dark mode disabled";
-      console.log("Dark mode disabled");
-    } else {
-	  document.getElementById("darkmode").innerHTML = "Dark mode enabled";
-      console.log("Dark mode enabled");
-    }
-  </script>
-  <p id="SeuratCapie"><img src="../resources/icons/DownloadIcon.png" id="imagepixel"> HopHopHasan Bedrock Tweaks <img src="../resources/icons/DownloadIcon.png" id="imagepixel"><br><span style="font-size:15px;"><a href="../downloads.html">Go back</a></span></p>
+  <span class="header">
+    <span style="font-size:15px;"><a href="../downloads.html">Back</a></span>
+  </span>
+  <span class="header">
+    <span id="SeuratCapie"><img src="../resources/icons/DownloadIcon.png" id="imagepixel"> HopHopHasan Tweaks Versions <img src="../resources/icons/DownloadIcon.png" id="imagepixel"></span>
+  </span>
   <h2 id="SeuratCapie">All versions</h2>
   <p><a href="HopHopHasan Tweaks v1.0.4.mcpack" download>HopHopHasan Tweaks v1.0.4.mcpack</a> (1.65 MB) | Released 21/4/22<br>
     <a href="HopHopHasan Tweaks v1.0.3.mcpack" download>HopHopHasan Tweaks v1.0.3.mcpack</a> (1.65 MB) | Released 17/4/22<br>
@@ -77,5 +71,9 @@
     <br>-Trading helper
     <p></p>
   </div>
+  <span class="translatebox">
+    <div style="float:right" id="google_translate_element"></div>
+    <img src="../resources/icons/TranslateIcon.png" id="imagepixel" style="float:right" >
+  </span>
 </body>
 </html>

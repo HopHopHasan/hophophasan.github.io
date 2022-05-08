@@ -1,3 +1,0 @@
-function deleteWebStorage() {
-	localStorage.clear();
-}

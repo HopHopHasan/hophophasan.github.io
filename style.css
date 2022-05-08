@@ -2,6 +2,11 @@
 body {
   background-color: #191919;
   color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
 }
 html * {
   font-family: 'Open Sans', sans-serif;
@@ -45,14 +50,15 @@ video {
   text-align: center;
   padding: 8px;
   border-radius: 10px;
+  z-index:1000;
 }
 
 /*translatebox*/
 .translatebox {
   position: fixed;
-  left: 0;
+  right: 0px;
   bottom: -20px;
-  width: 100%;
+  width: 50;
   background-color: hsla(0, 0%, 0%, 0.5);
   float: right;
   text-align: center;

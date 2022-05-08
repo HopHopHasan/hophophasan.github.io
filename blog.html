@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Downloads</title>
+  <!--metadata-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Keywords" content="HopHopHasan, blog, website, Hasan, Bob Odyssey, Minecraft, Downloads, Packs, Texture, Resource">
+  <meta name="Description" content="A downloads page where you can download several useful files, on the HopHopHasan site.">
+  <link href="https://hophophasan.tk/" rel="canonical">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="HopHopHasan File Downloads">
+  <meta name="twitter:description" content="The downloads section of the HopHopHasan site">
+  <meta name="twitter:image" content="https://hophophasan.tk/resources/backgrounds/BobPinkTrees.gif">
+  <!--load files-->
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="style.css">
+  <!--load the external js files so you can call its function later-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
+  <script type="text/javascript" src="scripts/googletranslate.js"></script>
+</head>
+
+<style>
+  body{
+    background-image: url('resources/backgrounds/EndZone.gif');
+  }
+</style>
+<body>
+  <span class="header">
+    <span style="font-size:15px;"><a href="index.html">Back</a></span>
+  </span>
+  <span class="header">
+    <span id="SeuratCapie"><img src="resources/icons/BlogIcon.png" id="imagepixel"> Viewing Blog (in iFrame) <img src="resources/icons/BlogIcon.png" id="imagepixel"></span>
+  </span>
+  <span class="header">
+    <a href="https://blog.hophophasan.tk/">Go to site</a>
+  </span>
+  <br><iframe id="blog" src="https://blog.hophophasan.tk" style="position:fixed; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0" frameborder=0></iframe>
+  <script>
+    function switchSite(){
+        $("#blog").attr('src','https://hophophasan.tk/bob');
+    }
+  </script>
+  <span class="translatebox">
+    <div style="float:right" id="google_translate_element"></div>
+    <img src="resources/icons/TranslateIcon.png" id="imagepixel" style="float:right" >
+  </span>
+</body>
+
