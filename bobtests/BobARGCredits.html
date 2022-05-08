@@ -10,18 +10,20 @@
   <link href="https://hophophasan.tk/" rel="canonical">
   <!--load files-->
   <link rel="icon" href="../resources/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="../style.css">
   <!--load the external js files so you can call its function later-->
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
   <script type="text/javascript" src="../scripts/googletranslate.js"></script>
 </head>
+
 <style>
     body{
       background-image: url('../resources/backgrounds/BobTowers.gif');
     }
 </style>
+
 <body>
   <span class="header">
     <span style="font-size:15px;"><a href="../bob.html">Back</a></span>
@@ -31,6 +33,58 @@
   </span><br><br>
   <iframe src="Bob Credits/index.html" width="640" height="360" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
   <p><a href="Bob Credits.html" download>Download Bob Credits.html</a></p>
+  <h2 id="SeuratCapie">BGM tracks</h2>
+  <div class="ScrollBox">
+    <p id="SeuratCapie">Bob Odyssey: New Town Tracks<br>
+    By @leowoco</p>
+    <li>Bob Odyssey Beat (Title screen BGM)</li>
+    <li>Bob Odyssey Credits</li>
+    <li>Chill Loop (New Town BGM)</li>
+    <li>Creepy Ambient (Dark World BGM)</li>
+    <li>Lonely Still (Admin menu BGM)</li>
+    <li>More Networking (Networking menu BGM)</li>
+    <li>Tense End (The wall collapses)</li>
+    <li>Bob Odyssey Beaten (The wall collapses)</li>
+    <li>The Memories Of Bob Odyssey</li>
+    <li>(Unused) Spooky Grey</li>
+    <br>
+    <p id="SeuratCapie">Additional Tracks<br>
+    From musmus (by Watson)</a>
+    <br><button onclick="translateText()">Toggle translation</button></p>
+    <li><span id="t1">君が眠るための即興曲</span> (Credits and World Viewer)</li>
+    <li>You Far Away (Credits and World Viewer)</li>
+    <li><span id="t2">血と夕焼け</span> (World Viewer)</li>
+    <li>deck brush detective (World Viewer)</li>
+    <li><span id="t3">晩夏の蝉</span> (World Viewer)</li>
+    <li><span id="t4">神秘の大樹</span> (World Viewer)</li>
+    <li><span id="t5">終焉の音</span> (World Viewer)</li>
+    <li><span id="t6">「思考」 </span> DBD file No.08 (World Viewer)</li>
+    <br>
+  </div>
+  <script>
+    var translated = 0;
+    function translateText(){
+      if (translated<1){
+        translated = 1;
+        document.getElementById("t1").innerHTML = "Impromptu For You To Sleep - 君が眠るための即興曲";
+        document.getElementById("t2").innerHTML = "Blood and Sunset - 血と夕焼け";
+        document.getElementById("t3").innerHTML = "Late Summer Cicadas - 晩夏の蝉";
+        document.getElementById("t4").innerHTML = "Mystic Forest - 神秘の大樹";
+        document.getElementById("t5").innerHTML = "The Sound of The End - 終焉の音";
+        document.getElementById("t6").innerHTML = "<q>Thinking</q> - 「思考」";
+      }
+      else{
+        translated = 0;
+        document.getElementById("t1").innerHTML = "君が眠るための即興曲";
+        document.getElementById("t2").innerHTML = "血と夕焼け";
+        document.getElementById("t3").innerHTML = "晩夏の蝉";
+        document.getElementById("t4").innerHTML = "神秘の大樹";
+        document.getElementById("t5").innerHTML = "終焉の音";
+        document.getElementById("t6").innerHTML = "「思考」";
+      }
+    }
+  </script>  
+  <p>Thanks to MusMus <a href="https://musmus.main.jp/">https://musmus.main.jp/</a> for the additional BGM.<br>音楽素材MusMus <a href="https://musmus.main.jp/">https://musmus.main.jp/</a></p>
   <span class="translatebox">
     <div style="float:right" id="google_translate_element"></div>
     <img src="../resources/icons/TranslateIcon.png" id="imagepixel" style="float:right" >
