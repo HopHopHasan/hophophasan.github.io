@@ -27,6 +27,17 @@
     background-attachment: fixed;
     background-blend-mode: overlay;
   }
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .fullScreen {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+  }
 </style>
 <body>
   <span class="header">
@@ -36,7 +47,30 @@
   <h2 id="SeuratCapie">Use the tabs at the top of the page to nagivate.</h2>
   <p>This website is being built! Please be patient!<br>
   Send any ideas to my email: <a href="mailto:hasmaj16@gmail.com">hasmaj16@gmail.com</a>.</p>
-  <iframe src="bobtests/Bob 1st Aniv/index.html" width="480" height="360" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+  <h2 id="SeuratCapie">Bob 1st Anniversary</h2>
+  <iframe id="bob" src="bobtests/Bob 1st Aniv/index.html" width=480 height=360 allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
+  <br>
+  <button onclick="iFrameFull()">Fullscreen</button>
+
+  <script>
+  function iFrameFull() {
+      function requestFullScreen(element) {
+        var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
+        if (requestMethod) { // Native full screen.
+            requestMethod.call(element);
+        } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+            var wscript = new ActiveXObject("WScript.Shell");
+            if (wscript !== null) {
+                wscript.SendKeys("{F11}");
+            }
+        }
+      }
+    var elem = document.body; // Make the body go full screen.
+    requestFullScreen(elem);
+    document.getElementsByTagName("iframe")[0].className = "fullScreen";
+  }
+  </script>
+  
   <h3>Your device statistics:</h3>
   Browser language: <span id="language"></span><br>
   Browser languages: <span id="languages"></span><br>
@@ -56,7 +90,7 @@
   IP address: <span id="IP">Fetching...</span><br>
   <br><br><br><br>
   <span class="translatebox">
-    <span id="google_translate_element"></span>
+    <div id="google_translate_element"></div>
   </span>
   <script>
     document.getElementById("language").innerHTML = window.navigator.language;
