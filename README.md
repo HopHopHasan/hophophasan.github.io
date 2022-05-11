@@ -1,6 +1,7 @@
 # hophophasan.github.io
 This is the repository for the website [hophophasan.tk](https://hophophasan.tk).
 ## To do:
+- Add javascript COPY scripts where necessary
 - Add additional pages
   - Add file backup section 
     - Also migrate the file section from the blog site
