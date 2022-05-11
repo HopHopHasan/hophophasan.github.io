@@ -1,5 +1,5 @@
 # hophophasan.github.io
-This is the repository for the website [hophophasan.tk](https://hophophasan.com).
+This is the repository for the website [hophophasan.com](https://hophophasan.com).
 ## To do:
 - Add javascript COPY scripts where necessary
 - Add additional pages
@@ -14,5 +14,5 @@ This is the repository for the website [hophophasan.tk](https://hophophasan.com)
   - Add a changelog page
 - Add a full site map (includes blog.hophophasan)
 - Add cookie/storage prompt (if required) 
-- Rewrite [blog.hophophasan.tk](https://blog.hophophasan.com) (use MIIVERSE2TURBOWARP EMBED for comments, although these will need to be backed up, or not if the comments are designed to be temporary, you can also use an IFRAME with PHP code running on another server ( like firebase ) to store comments  [https://stackoverflow.com/a/51584982])
+- Rewrite [blog.hophophasan.com](https://blog.hophophasan.com) (use MIIVERSE2TURBOWARP EMBED for comments, although these will need to be backed up, or not if the comments are designed to be temporary, you can also use an IFRAME with PHP code running on another server ( like firebase ) to store comments  [https://stackoverflow.com/a/51584982])
 - Optimise for mobile displays
