@@ -5,18 +5,11 @@
   <!--metadata-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Keywords" content="HopHopHasan, blog, website, Hasan, Bob Odyssey, clipboard, settings">
-  <meta name="Description" content="This is the HopHopHasan website, which also contains a blog site.">
-  <link href="https://hophophasan.tk/" rel="canonical">
   <!--load files-->
-  <link rel="icon" href="favicon.ico" type="image/x-icon"> 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="style.css">
   <!--load the external js files so you can call its function later-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
-  <script type="text/javascript" src="scripts/googletranslate.js"></script>
 </head>
 <style>
   body{
@@ -31,78 +24,6 @@
   }
 </style>
 <body>
-  <span class="header">
-    <a href="blog.html"><img src="resources/icons/BlogIcon.png" id="imagepixel">Blog<img src="resources/icons/BlogIcon.png" id="imagepixel"></a> | <a href="downloads.html"><img src="resources/icons/DownloadIcon.png" id="imagepixel">Downloads<img src="resources/icons/DownloadIcon.png" id="imagepixel"></a> | <a href="bob.html"><img src="resources/icons/BobIcon.png" id="imagepixel">Bob Test<img src="resources/icons/BobIcon2.png" id="imagepixel"></a> | <a href="settings.html"><img src="resources/icons/SettingsIcon.png" id="imagepixel">Settings<img src="resources/icons/SettingsIcon.png" id="imagepixel"></a>
-  </span>
-  <h1>Welcome to the website!</h1>
-  <h2 id="SeuratCapie">Use the tabs at the top of the page to nagivate.</h2>
-  <p>Now on a .com DOMAIN!! Site is still being built!<br>
-  Send any ideas to my email: <a href="mailto:hasmaj16@gmail.com">hasmaj16@gmail.com</a>.</p>
-  <h2 id="SeuratCapie">Bob 1st Anniversary</h2>
-  <iframe id="bob" src="resources/apps/Bob 1st Aniv/index.html" width=480 height=360 allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
-  <h2 id="SeuratCapie">Bob 1st Anniversary Part 2</h2>
-  <iframe id="bob2" src="resources/apps/Bob 1st Ani 2/index.html" width=480 height=360 allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
-  <img src="resources/images/Ani1.png" height=100% width=100%>
-  <img src="resources/images/Ani2.png" height=100% width=100%>
-  <br>
-  <script>
-  function iFrameFull() {
-      function requestFullScreen(element) {
-        var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
-        if (requestMethod) { // Native full screen.
-            requestMethod.call(element);
-        } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
-            var wscript = new ActiveXObject("WScript.Shell");
-            if (wscript !== null) {
-                wscript.SendKeys("{F11}");
-            }
-        }
-      }
-    var elem = document.body; // Make the body go full screen.
-    requestFullScreen(elem);
-    document.getElementsByTagName("iframe")[0].className = "fullScreen";
-  }
-  </script>
-  
-  <h3>Your device statistics:</h3>
-  Browser language: <span id="language"></span><br>
-  Browser languages: <span id="languages"></span><br>
-  Encoding: <span id="encoding"></span><br>
-  Page location: <span id="location"></span><br>
-  Date: <span id="date"></span><br>
-  Timezone offset: <span id="timezone"></span><br>
-  Referrer: <span id="referrer"></span><br>
-  Page history length: <span id="history"></span><br>
-  Platform: <span id="platform"></span><br>
-  Javascript: <span id="javascript">False</span><br>
-  Screen size: <span id="screen"></span><br>
-  Current page size: <span id="pagesize"></span><br>
-  Screen available size: <span id="screenavail"></span><br>
-  Colour depth: <span id="colordepth"></span> bits<br>
-  CPU cores: <span id="CPUcore"></span> cores<br>
-  IP address: <span id="IP">Fetching...</span><br>
-  <br><br><br><br>
-  <span class="translatebox">
-    <div style="float:right" id="google_translate_element"></div>
-    <img src="resources/icons/TranslateIcon.png" id="imagepixel" style="float:right" >
-  </span>
-  <script>
-    document.getElementById("language").innerHTML = window.navigator.language;
-    document.getElementById("languages").innerHTML = window.navigator.languages;
-    document.getElementById("encoding").innerHTML = document.characterSet;
-    document.getElementById("location").innerHTML = window.location.pathname;
-    document.getElementById("date").innerHTML = new Date()
-    document.getElementById("timezone").innerHTML = new Date().getTimezoneOffset()/60;
-    document.getElementById("referrer").innerHTML = document.referrer;
-    document.getElementById("history").innerHTML = history.length;
-    document.getElementById("platform").innerHTML = navigator.platform;
-    document.getElementById("javascript").innerHTML = "True";
-    document.getElementById("screen").innerHTML = screen.width + "x" + screen.height;
-    document.getElementById("pagesize").innerHTML = innerWidth + "x" + innerHeight;
-    document.getElementById("screenavail").innerHTML = screen.availWidth + "x" + screen.availHeight;
-    document.getElementById("colordepth").innerHTML = screen.colorDepth;
-    document.getElementById("CPUcore").innerHTML = navigator.hardwareConcurrency;
-    $.get("https://ipinfo.io", function(response) {document.getElementById("IP").innerHTML = response.ip;}, "json")
-  </script>
+  <h1>Comment Time</h1>
 </body>
 </html>
