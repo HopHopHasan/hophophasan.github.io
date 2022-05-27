@@ -5,18 +5,13 @@
   <!--metadata-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="Keywords" content="HopHopHasan, blog, website, Hasan, Bob Odyssey, clipboard, settings">
-  <meta name="Description" content="This is the HopHopHasan website, which also contains a blog site.">
-  <link href="https://hophophasan.tk/" rel="canonical">
   <!--load files-->
   <link rel="icon" href="favicon.ico" type="image/x-icon"> 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   <link rel="stylesheet" href="style.css">
-  <!--load the external js files so you can call its function later-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
-  <script type="text/javascript" src="scripts/googletranslate.js"></script>
+  <script type="text/javascript" src="scripts/googletranslate.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <style>
   body{
@@ -38,32 +33,7 @@
   <h2 id="SeuratCapie">Use the tabs at the top of the page to nagivate.</h2>
   <p>Now on a .com DOMAIN!! Site is still being built!<br>
   Send any ideas to my email: <a href="mailto:hasmaj16@gmail.com">hasmaj16@gmail.com</a>.</p>
-  <h2 id="SeuratCapie">Bob 1st Anniversary</h2>
-  <iframe id="bob" src="resources/apps/Bob 1st Aniv/index.html" width=480 height=360 allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
-  <h2 id="SeuratCapie">Bob 1st Anniversary Part 2</h2>
-  <iframe id="bob2" src="resources/apps/Bob 1st Ani 2/index.html" width=480 height=360 allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
-  <img src="resources/images/Ani1.png" height=100% width=100%>
-  <img src="resources/images/Ani2.png" height=100% width=100%>
-  <br>
-  <script>
-  function iFrameFull() {
-      function requestFullScreen(element) {
-        var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
-        if (requestMethod) { // Native full screen.
-            requestMethod.call(element);
-        } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
-            var wscript = new ActiveXObject("WScript.Shell");
-            if (wscript !== null) {
-                wscript.SendKeys("{F11}");
-            }
-        }
-      }
-    var elem = document.body; // Make the body go full screen.
-    requestFullScreen(elem);
-    document.getElementsByTagName("iframe")[0].className = "fullScreen";
-  }
-  </script>
-  
+  <br>  
   <h3>Your device statistics:</h3>
   Browser language: <span id="language"></span><br>
   Browser languages: <span id="languages"></span><br>
