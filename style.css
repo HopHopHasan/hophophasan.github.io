@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 /*set background colours, set font, alignment and sizes*/
 body {
@@ -8,10 +8,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-blend-mode: overlay;
+  background-blend-mode: soft-light;
 }
 html * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 h1 {
@@ -119,15 +119,14 @@ a:hover {
 
 /*load fonts*/
 @font-face {
-  font-family: "SeuratCapie";
-  src: url("SeuratCapie.otf");
+  font-family: "JPFont";
+  src: url("AnitoStdM.otf");
 }
-#SeuratCapie {
-  font-family: 'SeuratCapie';
+#JPFont {
+  font-family: 'JPFont';
   line-height: 1.2;
 }
-/*Add version of font which only has ENGLISH chars for quicker loading
-use the CJK only when needed*/
+/*CJK (JP) font*/
 
 /*alert banner UI*/
 .alert {
