@@ -30,11 +30,6 @@ video {
   width: 80%;
   object-fit: fill;
 }
-/*unused lightmode*/
-.lightmode {
-  background-color: #191919;
-  color: white;
-}
 /*ask browser to change button colours*/
 :root {
   color-scheme: light dark;
@@ -83,6 +78,46 @@ video {
   padding: 1px;
 }
 
+/*blog styles*/
+.blog *{
+  color: rgba(255, 255, 255, 0.7);
+  text-align: left;
+  text-decoration: none;
+}
+.blog .post{
+  padding: 20px;
+  margin: 25px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.blog .title{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 50px;
+  line-height: 1;
+}
+.blog .title:hover{
+  color: rgba(255, 69, 69, 1);
+}
+.blog .date {
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+}
+.blog .tags .tag{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/*link colours*/
+a:link {
+  color: #ff6666;
+}
+a:visited {
+  color: #ff8a8a;
+}
+a:hover {
+  color: #ff4545;
+}
+
 /*scroll bar colour*/
 div.ScrollBox {
   height:200px;
@@ -106,18 +141,8 @@ div.ScrollBox {
   background: rgb(30, 30, 30, 0.8); 
 }
 
-/*link colours*/
-a:link {
-  color: #ff6666;
-}
-a:visited {
-  color: #ff8a8a;
-}
-a:hover {
-  color: #ff4545;
-}
-
 /*load fonts*/
+/*CJK (JP) font*/
 @font-face {
   font-family: "JPFont";
   src: url("AnitoStdM.otf");
@@ -126,7 +151,6 @@ a:hover {
   font-family: 'JPFont';
   line-height: 1.2;
 }
-/*CJK (JP) font*/
 
 /*alert banner UI*/
 .alert {
