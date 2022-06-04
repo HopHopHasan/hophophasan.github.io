@@ -45,12 +45,9 @@ video {
 /*sticky header*/
 .header {
   position: sticky;
-  left: 0;
   top: 5px;
-  width: 100%;
-  background-color: hsla(0, 0%, 0%, 0.5);
-  text-align: center;
-  padding: 8px;
+  background-color: hsla(0, 0%, 0%, 0.3);
+  padding: 7px;
   border-radius: 10px;
   z-index:1000;
 }
@@ -60,26 +57,22 @@ video {
   position: fixed;
   right: 0px;
   bottom: -20px;
-  width: 50;
-  background-color: hsla(0, 0%, 0%, 0.5);
-  float: right;
-  text-align: center;
+  background-color: hsla(0, 0%, 0%, 0.3);
   padding: 5px;
   border-radius: 10px;
 }
 
-/*footer*/
-.footer {
-  position: sticky;
-  left: 0;
-  bottom: -17px;
-  width: 100%;
-  background-color: hsla(0, 0%, 0%, 0.5);
-  text-align: center;
-  padding: 1px;
-}
-
 /*blog styles*/
+
+/*fun:
+filter: blur(8px);
+backdrop-filter: blur(0px);
+*/
+
+.blogBG{
+  background-image: url('resources/backgrounds/blogBG2.jpg');
+  background-blend-mode: normal;
+}
 .blog *{
   color: rgba(255, 255, 255, 0.7);
   text-align: left;
@@ -97,14 +90,18 @@ video {
 .blog .pageDesc{
   color: rgba(255, 255, 255, 0.7);
 }
+.blog .pageDesc:hover{
+  color: rgba(255, 255, 255, 1);
+}
 .blog .post{
   padding: 20px;
   margin-block: 20px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .blog .title{
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   font-size: 40px;
   line-height: 1;
 }
@@ -114,9 +111,11 @@ video {
 .blog .desc{
   margin-top: 5px;
 }
-.blog .image{
+.blog img{
   border-radius: 15px;
-  padding-top: 10px;
+}
+.blog .image{
+  padding-top: 10px
 }
 .blog .date {
   color: rgba(255, 255, 255, 0.8);
@@ -134,8 +133,7 @@ video {
 @media (hover: none){
   .blog{
     max-width: 100%;
-    padding: 0px;
-    padding-top: 10px;
+    padding: 5px;
   }
   .blog .post{
     padding: 12px;
