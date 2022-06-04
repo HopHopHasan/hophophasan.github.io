@@ -74,12 +74,12 @@
     document.getElementById("history").innerHTML = history.length;
     document.getElementById("platform").innerHTML = navigator.platform;
     document.getElementById("javascript").innerHTML = "True";
-    document.getElementById("screen").innerHTML = screen.width + "x" + screen.height;
-    document.getElementById("pagesize").innerHTML = innerWidth + "x" + innerHeight;
-    document.getElementById("screenavail").innerHTML = screen.availWidth + "x" + screen.availHeight;
     document.getElementById("colordepth").innerHTML = screen.colorDepth;
     document.getElementById("CPUcore").innerHTML = navigator.hardwareConcurrency;
     $.get("https://ipinfo.io", function(response) {document.getElementById("IP").innerHTML = response.ip;}, "json")
+    document.getElementById("screen").innerHTML = screen.width + "x" + screen.height;
+    document.getElementById("pagesize").innerHTML = innerWidth + "x" + innerHeight;
+    document.getElementById("screenavail").innerHTML = screen.availWidth + "x" + screen.availHeight;
   </script>
 </body>
 </html>

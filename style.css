@@ -12,6 +12,7 @@ body {
 }
 html * {
   font-family: 'Montserrat', sans-serif;
+  word-wrap: break-word;
   text-align: center;
 }
 h1 {
@@ -84,27 +85,65 @@ video {
   text-align: left;
   text-decoration: none;
 }
+.blog{
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 20px;
+}
+.blog .pageTitle{
+  font-size: 50px;
+  color: rgba(255, 255, 255, 1);
+}
+.blog .pageDesc{
+  color: rgba(255, 255, 255, 0.7);
+}
 .blog .post{
   padding: 20px;
-  margin: 25px;
+  margin-block: 20px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .blog .title{
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 40px;
   line-height: 1;
 }
 .blog .title:hover{
-  color: rgba(255, 69, 69, 1);
+  color: rgba(255, 255, 255, 1);
+}
+.blog .desc{
+  margin-top: 5px;
+}
+.blog .image{
+  border-radius: 15px;
+  padding-top: 10px;
 }
 .blog .date {
   color: rgba(255, 255, 255, 0.8);
   display: inline-block;
 }
+.blog .date:hover {
+  color: rgba(255, 255, 255, 1);
+}
 .blog .tags .tag{
   display: inline-block;
-  margin-right: 5px;
+  margin-top: 4px;
+  margin-left: 2px;
+}
+/*if mobile*/
+@media (hover: none){
+  .blog{
+    max-width: 100%;
+    padding: 0px;
+    padding-top: 10px;
+  }
+  .blog .post{
+    padding: 12px;
+    margin-block: 10px;
+  }
+  .blog .title{
+    font-size: 30px;
+  }
 }
 
 /*link colours*/
