@@ -10,7 +10,8 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
-  <script type="text/javascript" src="scripts/googletranslate.js"></script>  
+  <script type="text/javascript" src="scripts/googletranslate.js"></script>
+  <script type="text/javascript" src="scripts/blogBG.js"></script>
 </head>
 <body class="blogBG">
   <!--inspo: https://sheeptester.github.io/longer-tweets/-->
@@ -38,7 +39,7 @@
   </div>
 
   <button type="button" onclick="changeBackground()">Change background</button>
-  
+  <br><br><br><br>
   <span class="translatebox">
     <div style="float:right" id="google_translate_element"></div>
     <img src="resources/icons/TranslateIcon.png" id="imagepixel" style="float:right" >
@@ -46,23 +47,5 @@
 </body>
 
 <script>
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * max);
-  }
-  
-  if (localStorage.blogBG){
-    document.body.style.backgroundImage = localStorage.blogBG;
-  }
-  else{
-    changeBackground();
-  }
-
-  function changeBackground(){
-    var random = getRandomInt(4)+1;
-    var string = "url('resources/backgrounds/blogBG"
-    var result = string.concat(random, ".jpg')")
-    console.log(result);
-    localStorage.blogBG = result;
-    document.body.style.backgroundImage = result;
-  }
+checkBG();
 </script>

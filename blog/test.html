@@ -1,1 +1,51 @@
-test page
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <!--metadata-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--load files-->
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../style.css">
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
+  <script type="text/javascript" src="../scripts/googletranslate.js"></script>
+  <script type="text/javascript" src="../scripts/blogBG.js"></script>
+</head>
+<body class="blogBG">
+  <!--inspo: https://sheeptester.github.io/longer-tweets/-->
+  <div class="blog">
+    <div><a href="index.html">Back</a> | <a href="https://blog.hophophasan.com/">Go to old blog site</a></div>
+    <div class="pageTitle">Blog</div>
+    <div class="pageDesc">This is where I'll ramble on a website that's barely used!</div>
+
+    <div class="post">
+      <a class="title" href="blog/2021-02-16/setting-up-domains">I ABSOLUTELY HATE SETTING UP WEBSITE DOMAINS!!! >:[</a>
+      <div class="desc">The first page on this (the previous actually) blog...</div>
+      <div class="image"><img src="blog/2021-02-16/setting-up-domains/SpongebobIdentity.jpg" title="Spongebob sitting at a table with coffee, thinking about his identity." alt="Spongebob sitting at a table with coffee, thinking about his identity."></div>
+      <span class="date">2021-02-16 |</span>
+      <span class="tags"><a class="tag" href="#rant">rant</a>
+      <a class="tag" href="#web">web</a></span>      
+    </div>
+
+    <div class="post">
+      <a class="title" href="blog/test.html">Test</a>
+      <div class="desc"></div>
+      <span class="date" title="Really 2022-06-04 because this is a new version of my blog">??????? |</span>
+      <span class="tags"><a class="tag" href="#test">test</a></span>      
+    </div>
+
+  </div>
+
+  <button type="button" onclick="changeBackground()">Change background</button>
+  <br><br><br><br>
+  <span class="translatebox">
+    <div style="float:right" id="google_translate_element"></div>
+    <img src="resources/icons/TranslateIcon.png" id="imagepixel" style="float:right" >
+  </span>
+</body>
+
+<script>
+checkBG();
+</script>
