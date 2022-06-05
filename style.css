@@ -43,9 +43,9 @@ table {
   border-collapse: collapse;
 }
 td, th {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.4);
   padding: 15px;
-  background-color: hsla(0, 0%, 0%, 0.05);
+  background-color: hsla(0, 0%, 0%, 0.1);
 }
 /*ask browser to change button colours*/
 :root {
@@ -135,9 +135,16 @@ backdrop-filter: blur(0px);
 }
 .blog img {
   border-radius: 15px;
+  max-width: 100%;
+  max-height: 100%;
 }
 .blog .image {
-  padding-top: 10px
+  padding-top: 10px;
+  display: block;
+  margin: 0 auto;
+}
+.blog .imageLeft {
+  padding-top: 10px;
 }
 .blog .date {
   color: rgba(255, 255, 255, 0.8);
