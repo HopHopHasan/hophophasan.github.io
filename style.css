@@ -36,7 +36,7 @@ blockquote {
   margin-left: 0px;
   margin-right: 0px;
   backdrop-filter: blur(5px);
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
 /*table*/
 table {
@@ -45,7 +45,7 @@ table {
 td, th {
   border: 1px solid rgba(0, 0, 0, 0.4);
   padding: 15px;
-  background-color: hsla(0, 0%, 0%, 0.1);
+  background-color: hsla(0, 0%, 0%, 0.2);
 }
 /*ask browser to change button colours*/
 :root {
@@ -61,7 +61,7 @@ td, th {
 .header {
   position: sticky;
   top: 5px;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.4);
   padding: 7px;
   border-radius: 10px;
   z-index:1000;
@@ -71,7 +71,7 @@ td, th {
   position: fixed;
   right: 0px;
   bottom: -20px;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.4);
   padding: 5px;
   border-radius: 10px;
 }
@@ -79,7 +79,7 @@ td, th {
 .codeBox {
   font-size: 15px;
   padding: 15px;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.4);
   backdrop-filter: blur(5px);
   white-space: pre-wrap;
   font-family: ui-monospace, 'SFMono-Regular', 'SF Mono', 'Menlo', 'Consolas', 'Liberation Mono', monospace;
