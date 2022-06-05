@@ -36,7 +36,16 @@ blockquote {
   margin-left: 0px;
   margin-right: 0px;
   backdrop-filter: blur(5px);
-  background-color: hsla(0, 0%, 0%, 0.2);
+  background-color: hsla(0, 0%, 0%, 0.3);
+}
+/*table*/
+table {
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid rgba(0, 0, 0, 1);
+  padding: 15px;
+  background-color: hsla(0, 0%, 0%, 0.1);
 }
 /*ask browser to change button colours*/
 :root {
