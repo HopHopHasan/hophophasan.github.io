@@ -9,11 +9,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: soft-light;
-}
-html * {
   font-family: 'Montserrat', sans-serif;
-  word-wrap: break-word;
   text-align: center;
+  word-wrap: break-word;
 }
 h1 {
   font-size: 30px;
@@ -30,6 +28,15 @@ video {
   height: 80%;
   width: 80%;
   object-fit: fill;
+}
+/*blockquote*/
+blockquote {
+  border-left: 5px solid rgba(255, 102, 102, 0.9);
+  padding: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  backdrop-filter: blur(5px);
+  background-color: hsla(0, 0%, 0%, 0.2);
 }
 /*ask browser to change button colours*/
 :root {
@@ -61,9 +68,12 @@ video {
 }
 /*code box*/
 .codeBox {
-  padding: 20px;
+  font-size: 15px;
+  padding: 15px;
+  background-color: hsla(0, 0%, 0%, 0.3);
+  backdrop-filter: blur(5px);
   white-space: pre-wrap;
-  word-break: break-word;
+  font-family: ui-monospace, 'SFMono-Regular', 'SF Mono', 'Menlo', 'Consolas', 'Liberation Mono', monospace;
 }
 
 /*fun:
@@ -76,7 +86,7 @@ backdrop-filter: blur(0px);
   background-image: url('/resources/backgrounds/blogBG2.jpg');
   background-blend-mode: normal;
 }
-.blog *{
+.blog * {
   color: rgba(255, 255, 255, 0.7);
   text-align: left;
   text-decoration: none;
