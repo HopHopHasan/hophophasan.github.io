@@ -12,9 +12,14 @@ function checkBG(){
 }
 
 function changeBackground(){
-  var random = getRandomInt(4)+1;
   var string = "url('/resources/backgrounds/blogBG"
-  var result = string.concat(random, ".jpg')")
+  var random = getRandomInt(7)+1;
+  if (localStorage.BGHQ == 1){
+    var result = string.concat(random, ".png')")
+  }
+  else{
+    var result = string.concat(random, ".webp')")
+  }
   console.log(result);
   localStorage.blogBG = result;
   document.body.style.backgroundImage = result;

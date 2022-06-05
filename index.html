@@ -39,47 +39,6 @@
   <p>Now on a .com DOMAIN!! Site is still being built!<br>
   Send any ideas to my email: <a href="mailto:hasmaj16@gmail.com">hasmaj16@gmail.com</a>.</p>
   <h2>Comment test:</h2>
-  <iframe height=300 width=300 frameborder=0 src="https://hophophasansitecomments.firebaseapp.com/"></iframe>
-  <br>  
-  <h3>Your device statistics:</h3>
-  Browser language: <span id="language"></span><br>
-  Browser languages: <span id="languages"></span><br>
-  Encoding: <span id="encoding"></span><br>
-  Page location: <span id="location"></span><br>
-  Date: <span id="date"></span><br>
-  Timezone offset: <span id="timezone"></span><br>
-  Referrer: <span id="referrer"></span><br>
-  Page history length: <span id="history"></span><br>
-  Platform: <span id="platform"></span><br>
-  Javascript: <span id="javascript">False</span><br>
-  Screen size: <span id="screen"></span><br>
-  Current page size: <span id="pagesize"></span><br>
-  Screen available size: <span id="screenavail"></span><br>
-  Colour depth: <span id="colordepth"></span> bits<br>
-  CPU cores: <span id="CPUcore"></span> cores<br>
-  IP address: <span id="IP">Fetching...</span><br>
-  <br><br><br><br>
-  <span class="translatebox">
-    <div style="float:right" id="google_translate_element"></div>
-    <img src="resources/icons/TranslateIcon.png" id="imagepixel" style="float:right" >
-  </span>
-  <script>
-    document.getElementById("language").innerHTML = window.navigator.language;
-    document.getElementById("languages").innerHTML = window.navigator.languages;
-    document.getElementById("encoding").innerHTML = document.characterSet;
-    document.getElementById("location").innerHTML = window.location.pathname;
-    document.getElementById("date").innerHTML = new Date()
-    document.getElementById("timezone").innerHTML = new Date().getTimezoneOffset()/60;
-    document.getElementById("referrer").innerHTML = document.referrer;
-    document.getElementById("history").innerHTML = history.length;
-    document.getElementById("platform").innerHTML = navigator.platform;
-    document.getElementById("javascript").innerHTML = "True";
-    document.getElementById("colordepth").innerHTML = screen.colorDepth;
-    document.getElementById("CPUcore").innerHTML = navigator.hardwareConcurrency;
-    $.get("https://ipinfo.io", function(response) {document.getElementById("IP").innerHTML = response.ip;}, "json")
-    document.getElementById("screen").innerHTML = screen.width + "x" + screen.height;
-    document.getElementById("pagesize").innerHTML = innerWidth + "x" + innerHeight;
-    document.getElementById("screenavail").innerHTML = screen.availWidth + "x" + screen.availHeight;
-  </script>
+  <iframe height=500 width=500 frameborder=0 src="https://hophophasansitecomments.firebaseapp.com/"></iframe>
 </body>
 </html>
