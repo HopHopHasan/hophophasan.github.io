@@ -38,6 +38,15 @@ blockquote {
   backdrop-filter: blur(5px);
   background-color: hsla(0, 0%, 0%, 0.4);
 }
+/*code formatting*/
+code {
+  padding: 3px 5px;
+  line-height: 1;
+  border-radius: 5px;
+  font-size: 15px;
+  backdrop-filter: blur(5px);
+  background-color: hsla(0, 0%, 0%, 0.4);
+}
 /*table*/
 table {
   border-collapse: collapse;
@@ -45,7 +54,6 @@ table {
 td, th {
   border: 1px solid rgba(0, 0, 0, 0.4);
   padding: 15px;
-  backdrop-filter: blur(5px);
   background-color: hsla(0, 0%, 0%, 0.2);
 }
 /*ask browser to change button colours*/
@@ -54,7 +62,7 @@ td, th {
 }
 /*mouse highlight colour*/
 ::selection {
-  background-color: rgba(255, 15, 15, 0.8);
+  background-color: #ff3c3cb6
 }
 /*nearest neighbour pixel scaling for pixel art*/
 #imagepixel {
@@ -84,6 +92,7 @@ td, th {
 .codeBox {
   font-size: 15px;
   padding: 15px;
+  line-height: 1.6;
   background-color: hsla(0, 0%, 0%, 0.4);
   backdrop-filter: blur(5px);
   white-space: pre-wrap;
@@ -193,13 +202,18 @@ backdrop-filter: blur(0px);
 
 /*link colours*/
 a:link {
-  color: #ff6666;
+  color: #ff6868;
+  -webkit-transition: color 0.05s linear;
+  -moz-transition: color 0.05s linear;
+  -ms-transition: color 0.05s linear;
+  -o-transition: color 0.05s linear;
+  transition: color 0.05s linear;
 }
 a:visited {
-  color: #ff8a8a;
+  color: #ff6868;
 }
 a:hover {
-  color: #ff4545;
+  color: #ffecec;
 }
 
 /*scroll bar colour*/
