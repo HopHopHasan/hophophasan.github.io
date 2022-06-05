@@ -52,6 +52,10 @@ td, th {
 :root {
   color-scheme: light dark;
 }
+/*mouse highlight colour*/
+::selection {
+  background-color: rgba(255, 15, 15, 0.8);
+}
 /*nearest neighbour pixel scaling for pixel art*/
 #imagepixel {
 	image-rendering: pixelated;
@@ -168,6 +172,9 @@ backdrop-filter: blur(0px);
 }
 .blog .headingAnchor:hover{
   color: rgba(255, 255, 255, 0.5);
+}
+.blog ::selection {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*if mobile*/
 @media (hover: none) {
