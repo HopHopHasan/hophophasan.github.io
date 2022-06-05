@@ -93,9 +93,6 @@ backdrop-filter: blur(0px);
 .blog .pageDesc {
   color: rgba(255, 255, 255, 0.7);
 }
-.blog .pageDesc:hover {
-  color: rgba(255, 255, 255, 1);
-}
 .blog .post {
   padding: 20px;
   margin-block: 20px;
@@ -131,6 +128,16 @@ backdrop-filter: blur(0px);
   display: inline-block;
   margin-top: 4px;
   margin-left: 2px;
+}
+.blog .tags .tagHeader {
+  display: inline-block;
+  margin-top: 8px;
+}
+.blog .headingAnchor{
+  color: rgba(255, 255, 255, 0.3);
+}
+.blog .headingAnchor:hover{
+  color: rgba(255, 255, 255, 0.5);
 }
 /*if mobile*/
 @media (hover: none) {
