@@ -3,19 +3,19 @@
 <head>
   <title>Blog</title>
   <!--metadata-->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <!--load files-->
-  <link rel="icon" href="../favicon.ico" type="image/x-icon"> 
-  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../style.css">
-  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" SameSite=Lax></script>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon"/> 
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <script type="text/javascript" src="../scripts/googletranslate.js"></script>
   <script type="text/javascript" src="../scripts/blogBG.js"></script>
 </head>
-<body class="blogBG" onload="checkBG()">
+<body class="blogBG">
   <div class="blog">
-    <div><a href="../blog.html">Back</a></div>
+    <div><a href="index.html">Back</a></div>
     <div class="pageTitle">Test</div>
     <div class="pageDesc"><span title="Really 2022-06-04 because this is a new version of my blog">No-one knows the date... |</span>
     <span class="tags"><a class="tagHeader" href="../blog.html#test">test</a></span></div>
@@ -24,7 +24,7 @@
         <a href="#TITLEONE" class="headingAnchor">#</a>
         TITLE ONE
     </h1>
-    <div class="codeBox"><xmp><body class="blogBG">
+    <div class="codeBox"><xmp>
     <div class="blog">
         <p id="text">BLAHBLAHBLAH</p>
     </div>
@@ -77,9 +77,9 @@
         IMAGETEST
     </h1>
     <p>Small</p>
-    <div class="imageLeft"><img src="../resources/screenshots/fontTest.png" height="281px"></div>
+    <div class="imageLeft"><img src="../resources/screenshots/fontTest.png" height="281px"/></div>
     <p>Big (this image is 8k and lags the browser lol)</p>
-    <div class="image"><img src="../resources/screenshots/fontTest.png"></div>
+    <div class="image"><img src="../resources/screenshots/fontTest.png"/></div>
     <h1 id="Gootbye">
         <a href="#Gootbye" class="headingAnchor">#</a>
         gootbye
@@ -90,6 +90,9 @@
   </div>
   <span class="translatebox">
     <div style="float:right" id="google_translate_element"></div>
-    <img src="../resources/icons/TranslateIcon.png" id="imagepixel" style="float:right" >
+    <img src="../resources/icons/TranslateIcon.png" id="imagepixel" style="float:right"/>
   </span>
+  <script>
+      checkBG(1);
+  </script>
 </body>
