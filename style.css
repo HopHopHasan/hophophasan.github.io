@@ -111,6 +111,9 @@ backdrop-filter: blur(0px);
 .blog .desc {
   margin-top: 5px;
 }
+.blog .text {
+  color: rgba(255, 255, 255, 0.8);
+}
 .blog img {
   border-radius: 15px;
 }
