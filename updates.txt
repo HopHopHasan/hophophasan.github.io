@@ -1,0 +1,4 @@
+2022-06-05 - Added background options to blog page, and high-quality options site wide (check settings)
+2020-05-05 - Created blog page
+
+//fix High quality background detection
