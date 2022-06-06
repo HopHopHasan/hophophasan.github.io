@@ -33,5 +33,12 @@
     <div style="float:right" id="google_translate_element"></div>
     <img src="./resources/icons/TranslateIcon.png" id="imagepixel" style="float:right"/>
   </span>
+  <script>
+    if (localStorage.goingToDevPage == 1){
+        var pageToGo = "/デヴ.html";
+        localStorage.goingToDevPage = 0
+        window.location.href = pageToGo;
+    }
+  </script>
 </body>
 </html>

@@ -69,7 +69,7 @@ td, th {
 }
 /*mouse highlight colour*/
 ::selection {
-  background-color: #ff3c3cb6
+  background-color: #ff3c3ca1
 }
 /*nearest neighbour pixel scaling for pixel art*/
 #imagepixel {
@@ -115,6 +115,22 @@ td, th {
   font-family: ui-monospace, 'SFMono-Regular', 'SF Mono', 'Menlo', 'Consolas', 'Liberation Mono', monospace;
 }
 
+/*link colours*/
+a:link {
+  color: #ff6868;
+  -webkit-transition: color 0.05s linear;
+  -moz-transition: color 0.05s linear;
+  -ms-transition: color 0.05s linear;
+  -o-transition: color 0.05s linear;
+  transition: color 0.05s linear;
+}
+a:visited {
+  color: #ff6868;
+}
+a:hover {
+  color: #ffeeee;
+}
+
 /*fun:
 filter: blur(8px);
 backdrop-filter: blur(0px);
@@ -126,23 +142,31 @@ backdrop-filter: blur(0px);
   background-blend-mode: normal;
 }
 .blog * {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   text-align: left;
   text-decoration: none;
 }
-.blog{
+.blog {
   margin: 0 auto;
   max-width: 80%;
   padding: 20px;
 }
 .blog .pageTitle {
   font-size: 50px;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.9);
 }
-.blog .pageDesc {
+.pageTitle {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.desc {
+  margin-top: 5px;
   color: rgba(255, 255, 255, 0.7);
 }
-.blog .post {
+.pageDesc {
+  color: rgba(255, 255, 255, 0.8);
+}
+.post {
   padding: 20px;
   margin-block: 20px;
   border-radius: 20px;
@@ -150,53 +174,64 @@ backdrop-filter: blur(0px);
   background-color: rgba(0, 0, 0, 0.4);
 }
 .blog .title {
-  color: rgba(255, 255, 255, 0.8);
   font-size: 40px;
   line-height: 1;
+  color: rgba(255, 255, 255, 0.8);
 }
-.blog .title:hover {
+.title {
+  font-size: 40px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.8);
+}
+.title:hover {
   color: rgba(255, 255, 255, 1);
 }
 .blog h1, h2{
   color: rgba(255, 255, 255, 0.9);
+  line-height: 1;
 }
-.blog .desc {
-  margin-top: 5px;
-}
-.blog .text {
-  color: rgba(255, 255, 255, 0.8);
+.sub{
+  line-height: 0;
 }
 .blog img {
   border-radius: 15px;
   max-width: 100%;
   max-height: 100%;
 }
-.blog .image {
+.image {
   padding-top: 10px;
   display: block;
   margin: 0 auto;
 }
-.blog .date {
-  color: rgba(255, 255, 255, 0.8);
+.date {
+  color: rgba(255, 255, 255, 0.6);
   display: inline-block;
 }
-.blog .date:hover {
+.date:hover {
+  -webkit-transition: color 0.05s linear;
+  -moz-transition: color 0.05s linear;
+  -ms-transition: color 0.05s linear;
+  -o-transition: color 0.05s linear;
+  transition: color 0.05s linear;
   color: rgba(255, 255, 255, 1);
 }
-.blog .tags .tag {
+.tags .tag {
   display: inline-block;
   margin-top: 4px;
   margin-left: 2px;
 }
-.blog .tags .tagHeader {
+.tags .tagHeader {
   display: inline-block;
   margin-top: 8px;
 }
-.blog .headingAnchor{
-  color: rgba(255, 255, 255, 0.3);
+.headingAnchor{
+  color: rgba(255, 255, 255, 0.4);
 }
-.blog .headingAnchor:hover{
-  color: rgba(255, 255, 255, 0.5);
+.blog .headingAnchor{
+  color: rgba(255, 255, 255, 0.4);
+}
+.headingAnchor:hover{
+  color: rgba(255, 255, 255, 0.8);
 }
 .blog ::selection {
   background-color: rgba(0, 0, 0, 0.5);
@@ -218,22 +253,6 @@ backdrop-filter: blur(0px);
   .blog img{
     border-radius: 0px;
   }
-}
-
-/*link colours*/
-a:link {
-  color: #ff6868;
-  -webkit-transition: color 0.05s linear;
-  -moz-transition: color 0.05s linear;
-  -ms-transition: color 0.05s linear;
-  -o-transition: color 0.05s linear;
-  transition: color 0.05s linear;
-}
-a:visited {
-  color: #ff6868;
-}
-a:hover {
-  color: #ffecec;
 }
 
 /*scroll bar colour*/

@@ -4,9 +4,33 @@ function getRandomInt(max) {
 
 function checkBG(layer){
     if (localStorage.blogBG){
-      document.body.style.backgroundImage = localStorage.blogBG;
+      var index = localStorage.blogBG.lastIndexOf('.');
+      var fileType = localStorage.blogBG.slice(index+1).replace(/'/g, '').slice(0,-1);
+      console.log("BG filetype: " + fileType);
+      var fileName = localStorage.blogBG.slice(0,index);
+      if (localStorage.BGHQ == 0 && fileType == "webp" || localStorage.BGHQ == 1 && fileType == "png" || localStorage.BGHQ === undefined){
+        console.log("BG preference loaded");
+        document.body.style.backgroundImage = localStorage.blogBG;
+      }
+      else{
+        if (localStorage.BGHQ == 1){
+          console.log("BG changed to high quality");
+          var result = fileName.concat(".png')");
+          localStorage.blogBG = result;
+          console.log(result + " BG saved to localStorage");
+          document.body.style.backgroundImage = result;
+        }
+        else {
+          console.log("BG changed to standard quality");
+          var result = fileName.concat(".webp')");
+          localStorage.blogBG = result;
+          console.log(result + " BG saved to localStorage");
+          document.body.style.backgroundImage = result;
+        }
+      }
     }
     else{
+      console.log("New background set");
       changeBackground(layer);
     }
 }
@@ -24,7 +48,7 @@ function changeBackground(layer){
   else{
     var result = string.concat(random, ".webp')")
   }
-  console.log(result);
-  localStorage.blogBG = result;  
+  localStorage.blogBG = result;
+  console.log(result + " BG saved to localStorage");
   document.body.style.backgroundImage = result;
 }
