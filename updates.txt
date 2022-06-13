@@ -1,5 +1,7 @@
+2022-06-13 - Removed blur effect to improve performance on some devices
+2022-06-09 - Ported more pages
 2022-06-08 - Tweaked dev 'quick links' page
-2022-06-06 - Link bug fixes, added keyboard shortcut to DEV 'quick links' PAGE 
+2022-06-06 - Link bug fixes, added keyboard shortcut to DEV 'quick links' PAGE (interally デヴ)
 2022-06-05 - Added background options to blog page, and high-quality options site wide (check settings)
 2020-06-05 - Created blog page
 
