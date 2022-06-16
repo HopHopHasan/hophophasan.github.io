@@ -9,6 +9,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: soft-light;
+  -webkit-transition: background-image 0.5s ;
+  transition: background-image 0.5s;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   word-wrap: break-word;
@@ -135,8 +137,8 @@ backdrop-filter: blur(0px);
 
 /*blog styles*/
 .blogBG {
-  background-image: url('/resources/backgrounds/blogBG3.webp');
-  background-blend-mode: normal;
+  background-image: url('./resources/backgrounds/blogBG3.webp');
+  background-blend-mode: difference;
 }
 .blog * {
   color: rgba(255, 255, 255, 0.8);
@@ -157,6 +159,7 @@ backdrop-filter: blur(0px);
   color: rgba(255, 255, 255, 0.9);
 }
 .desc {
+  font-size: 18px;
   margin-top: 5px;
   color: rgba(255, 255, 255, 0.7);
 }
