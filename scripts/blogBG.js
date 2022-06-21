@@ -51,3 +51,34 @@ function changeBackground(layer){
   console.log(savedPhoto + " BG saved to localStorage");
   document.body.style.backgroundImage = result;
 }
+
+function preloadBackgrounds(layer){
+  var string = "";
+  for (let i = 0; i < layer; i++){
+    string = string.concat("../")
+  }
+  string = string.concat("resources/backgrounds/blogBG")
+  if (localStorage.BGHQ == 1){
+    var fileType = ".png"
+  }
+  else{
+    var fileType = ".webp"
+  }
+  var images = new Array()
+  function preload() {
+    for (i = 0; i < preload.arguments.length; i++) {
+      images[i] = new Image()
+      images[i].src = preload.arguments[i]
+    }
+  }
+  preload(
+    string+"1"+fileType,
+    string+"2"+fileType,
+    string+"3"+fileType,
+    string+"4"+fileType,
+    string+"5"+fileType,
+    string+"6"+fileType,
+    string+"7"+fileType,
+  )
+console.log("preloading done!");
+}
