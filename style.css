@@ -2,6 +2,7 @@
 @font-face {
   font-family: "Montserrat";
   src: url("Montserrat.ttf");
+  font-display: swap
 }
 /*CJK (JP) font*/
 @font-face {
