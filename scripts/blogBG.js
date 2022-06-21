@@ -11,6 +11,8 @@ function checkBG(layer){
   if (localStorage.blogBG){
     console.log("getting user background");
     if (localStorage.BGHQ == 1){
+      localStorage.blogBG = savedPhoto + ".webp";
+      preloadBackgrounds(layer);
       var result = string.concat(localStorage.blogBG, ".png')");
     }
     else{
