@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/*load fonts*/
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat.ttf");
+}
+/*CJK (JP) font*/
+@font-face {
+  font-family: "JPFont";
+  src: url("AnitoStdM.otf");
+}
+#JPFont {
+  font-family: 'JPFont';
+  line-height: 1.2;
+}
 
 /*set background colours, set font, alignment and sizes*/
 body {
@@ -275,17 +288,6 @@ div.ScrollBox {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(30, 30, 30, 0.8); 
-}
-
-/*load fonts*/
-/*CJK (JP) font*/
-@font-face {
-  font-family: "JPFont";
-  src: url("AnitoStdM.otf");
-}
-#JPFont {
-  font-family: 'JPFont';
-  line-height: 1.2;
 }
 
 /*alert banner UI*/
