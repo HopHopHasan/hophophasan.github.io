@@ -11,7 +11,7 @@ function checkBG(layer){
   if (localStorage.blogBG){
     console.log("getting user background");
     if (localStorage.BGHQ == 1){
-      localStorage.blogBG = savedPhoto + ".webp";
+      document.body.style.backgroundImage = string + ".webp";
       preloadBackgrounds(layer);
       var result = string.concat(localStorage.blogBG, ".png')");
     }
@@ -24,7 +24,7 @@ function checkBG(layer){
     var random = getRandomInt(7)+1;
     var savedPhoto = "blogBG" + random;
     if (localStorage.BGHQ == 1){
-      localStorage.blogBG = savedPhoto + ".webp";
+      document.body.style.backgroundImage = savedPhoto + ".webp";
       preloadBackgrounds(layer);
       var result = string.concat(savedPhoto, ".png')");
     }
@@ -57,8 +57,9 @@ function changeBackground(layer){
 }
 
 function preloadBackgrounds(layer){
+  var string = "";
   for (let i = 0; i < layer; i++){
-    var string = string.concat("../")
+    string = string.concat("../")
   }
   string = string.concat("resources/backgrounds/blogBG")
   if (localStorage.BGHQ == 1){
