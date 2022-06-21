@@ -1,7 +1,3 @@
-function googleTranslateElementInit() { 
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element'); 
-} 
-
 var devKeys = ['d', '`'];
 document.addEventListener("keydown", function(event) {
     if (event.key === 'd') {

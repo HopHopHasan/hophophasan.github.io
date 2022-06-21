@@ -46,10 +46,21 @@ video {
 }
 /*maximise space for mobile devices*/
 @media screen and (max-width: 768px) {
-  video{
+  video {
     height: 100%;
     width: 100%;  
   }
+}
+/*background video*/
+#videoBG {
+  object-fit: cover;
+  position: fixed;
+  width: 100%; 
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  filter: brightness(25%);
 }
 /*blockquote*/
 blockquote {

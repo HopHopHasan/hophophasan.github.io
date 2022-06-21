@@ -16,3 +16,4 @@ This is the repository for the website [hophophasan.com](https://hophophasan.com
 - Add cookie/storage prompt (if required) 
 - Rewrite [blog.hophophasan.com](https://blog.hophophasan.com) (use MIIVERSE2TURBOWARP EMBED for comments, although these will need to be backed up, or not if the comments are designed to be temporary, you can also use an IFRAME with PHP code running on another server ( like firebase ) to store comments  [https://stackoverflow.com/a/51584982])
 - Optimise for mobile displays
+- Translate some pages
