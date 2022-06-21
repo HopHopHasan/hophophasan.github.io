@@ -22,6 +22,8 @@ function checkBG(layer){
     var random = getRandomInt(7)+1;
     var savedPhoto = "blogBG" + random;
     if (localStorage.BGHQ == 1){
+      localStorage.blogBG = savedPhoto + ".webp";
+      preloadBackgrounds(layer);
       var result = string.concat(savedPhoto, ".png')");
     }
     else{
@@ -53,9 +55,8 @@ function changeBackground(layer){
 }
 
 function preloadBackgrounds(layer){
-  var string = "";
   for (let i = 0; i < layer; i++){
-    string = string.concat("../")
+    var string = string.concat("../")
   }
   string = string.concat("resources/backgrounds/blogBG")
   if (localStorage.BGHQ == 1){
