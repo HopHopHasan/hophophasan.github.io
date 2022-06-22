@@ -13,48 +13,53 @@
 </head>
 <body>
   <video src="resources/backgrounds/BobTowers.mp4" autoplay loop muted playsinline id="videoBG"></video>
-  <span class="header">
-    <span style="font-size:15px;"><a href="index.html">Back</a></span>
-  </span>
-  <span class="header">
-    <span> Game Clipboard </span>
-  </span>
-  <div class="alert success">
-    <span class="closebtn">×</span>  
-    <span class="infoimage"><img src="resources/ItIsI.jpg" width="80"/></span>
-    <span class="infotext"><br/><strong>Please note!</strong> You must have javascript enabled to see the following result!<br/></span>
-    <div id="javascript">Javascript is disabled... uh oh...</div>
+  <nav>
+    <span class="header">
+      <span style="font-size:15px;"><a href="index.html">Back</a></span>
+    </span>
+    <span class="header">
+      <span> Game Clipboard </span>
+    </span>
+  </nav>
+  <main>
+    <div class="alert success">
+      <span class="closebtn">×</span>  
+      <span class="infoimage"><img src="resources/ItIsI.jpg" width="80"/></span>
+      <span class="infotext"><br/><strong>Please note!</strong> You must have javascript enabled to see the following result!<br/></span>
+      <div id="javascript">Javascript is disabled... uh oh...</div>
+      <script>
+        document.getElementById("javascript").innerHTML = "Javascript is enabled! Nice!";
+      </script>
+      <br/>
+    </div>
     <script>
-      document.getElementById("javascript").innerHTML = "Javascript is enabled! Nice!";
-    </script>
-    <br/>
-  </div>
-  <script>
-    var close = document.getElementsByClassName("closebtn");
-    var i;
-    for (i = 0; i < close.length; i++) {
-      close[i].onclick = function(){
-        var div = this.parentElement;
-        div.style.opacity = "0";
-        setTimeout(function(){ div.style.display = "none"; }, 600);
+      var close = document.getElementsByClassName("closebtn");
+      var i;
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function(){
+          var div = this.parentElement;
+          div.style.opacity = "0";
+          setTimeout(function(){ div.style.display = "none"; }, 600);
+        }
       }
-    }
-  </script>
-  <p>Here is the data sent by the game:</p>
-  <script>
-    var url = window.location.href;
-    let paramaters = (new URL(url)).searchParams;
-    var report = paramaters.get("report");
-    var username = paramaters.get("username");
-  </script>
-  <div class="ScrollBox">
-    <script>document.write(report)</script>
-  </div>
-  Your username: <script>document.write(username)</script>
-  <br/><p>Triple click to select all of the text, then use CTRL+C or COMMAND+C to copy it.</p><br/>
-  <span class="translatebox">
-    <div style="float:right" id="google_translate_element"></div>
-    <img src="resources/icons/TranslateIcon.png" id="imagepixel" style="float:right"/>
-  </span>
+    </script>
+    <p>Here is the data sent by the game:</p>
+    <script>
+      var url = window.location.href;
+      let paramaters = (new URL(url)).searchParams;
+      var report = paramaters.get("report");
+      var username = paramaters.get("username");
+    </script>
+    <div class="ScrollBox">
+      <script>document.write(report)</script>
+    </div>
+    Your username: <script>document.write(username)</script>
+    <br/><p>Triple click to select all of the text, then use CTRL+C or COMMAND+C to copy it.</p><br/>
+
+    <span class="translatebox">
+      <div style="float:right" id="google_translate_element"></div>
+      <img src="resources/icons/TranslateIcon.png" id="imagepixel" style="float:right"/>
+    </span>
+  </main>
 </body>
 </html>

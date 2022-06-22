@@ -13,24 +13,26 @@
 </head>
 <body>
   <video src="resources/backgrounds/EndZone.mp4" autoplay loop muted playsinline id="videoBG"></video>
-  <h1>404 Error!</h1>
-  <p>This page doesn't exist... maybe you typed it in wrong<br/>or maybe you got given the wrong link :troll:</p>
-  <img src="./resources/gif/sponge.gif"/>
-  <p>Click <a href="https://hophophasan.com">here</a> to return to the main page.<br/></p>
-  <img src="./resources/gif/EternalTorture.gif"/>
-  <img src="./resources/gif/GoogleAssistant.gif"/>
-  <img src="./resources/gif/purgatory.gif"/>
-  <img src="./resources/gif/TrulyUnfortunate.gif"/>
-  <span class="translatebox">
-    <div style="float:right" id="google_translate_element"></div>
-    <img src="./resources/icons/TranslateIcon.png" id="imagepixel" style="float:right"/>
-  </span>
-  <script>
-    if (localStorage.goingToDevPage == 1) {
-        var pageToGo = "/デヴ.html";
-        localStorage.goingToDevPage = 0
-        window.location.href = pageToGo;
-    }
-  </script>
+  <main>
+    <h1>404 Error!</h1>
+    <p>This page doesn't exist... maybe you typed it in wrong<br/>or maybe you got given the wrong link :troll:</p>
+    <img src="./resources/gif/sponge.gif"/>
+    <p>Click <a href="https://hophophasan.com">here</a> to return to the main page.<br/></p>
+    <img src="./resources/gif/EternalTorture.gif"/>
+    <img src="./resources/gif/GoogleAssistant.gif"/>
+    <img src="./resources/gif/purgatory.gif"/>
+    <img src="./resources/gif/TrulyUnfortunate.gif"/>
+    <span class="translatebox">
+      <div style="float:right" id="google_translate_element"></div>
+      <img src="./resources/icons/TranslateIcon.png" id="imagepixel" style="float:right"/>
+    </span>
+    <script>
+      if (localStorage.goingToDevPage == 1) {
+          var pageToGo = "/デヴ.html";
+          localStorage.goingToDevPage = 0
+          window.location.href = pageToGo;
+      }
+    </script>
+  </main>
 </body>
 </html>
