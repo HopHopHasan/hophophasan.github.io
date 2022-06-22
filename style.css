@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Montserrat";
   src: url("Montserrat.woff2");
-  font-display: auto;
+  font-display: swap;
 }
 /*CJK (JP) font*/
 @font-face {
@@ -17,7 +17,7 @@
 /*set background colours, set font, alignment and sizes*/
 body {
   color: white;
-  font-family: 'Montserrat', Verdana, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   word-wrap: break-word;
   background-color: #191919;
