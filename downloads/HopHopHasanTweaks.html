@@ -13,9 +13,6 @@
   <script type="text/javascript" src="../scripts/checkBG.js"></script>  
 </head>
 <style>
-  body{
-    background-image: url('../resources/backgrounds/SunsetSwamp.webp');
-  }
   div.ScrollBox {
     height:300px;
   }
@@ -71,8 +68,14 @@
     <img src="../resources/icons/TranslateIcon.png" id="imagepixel" style="float:right" >
   </span>
   <script>
-    var result = "url('../resources/backgrounds/SunsetSwamp.png')";
-    checkBG();
+    if (localStorage.BGHQ == 1){
+      document.body.style.backgroundImage = "url('../../resources/backgrounds/SunsetSwamp.png')";
+      console.log("high quality");
+    }
+    else{
+      document.body.style.backgroundImage = "url('../../resources/backgrounds/SunsetSwamp.webp')";
+      console.log("normal quality");
+    }
   </script>
 </body>
 </html>

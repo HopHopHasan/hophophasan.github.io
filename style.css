@@ -1,8 +1,8 @@
 /*load fonts*/
 @font-face {
   font-family: "Montserrat";
-  src: url("Montserrat.ttf");
-  font-display: swap
+  src: url("Montserrat.woff2");
+  font-display: auto;
 }
 /*CJK (JP) font*/
 @font-face {
@@ -16,8 +16,11 @@
 
 /*set background colours, set font, alignment and sizes*/
 body {
-  background-color: #191919;
   color: white;
+  font-family: 'Montserrat', Verdana, sans-serif;
+  text-align: center;
+  word-wrap: break-word;
+  background-color: #191919;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,9 +28,6 @@ body {
   background-blend-mode: soft-light;
   -webkit-transition: background-image 0.5s ;
   transition: background-image 0.5s;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  word-wrap: break-word;
 }
 h1 {
   font-size: 30px;
@@ -120,15 +120,6 @@ td, th {
     margin-left: 20px;
   }
 }
-/*translatebox*/
-.translatebox {
-  position: fixed;
-  right: 0px;
-  bottom: -20px;
-  background-color: hsla(0, 0%, 0%, 0.4);
-  padding: 5px;
-  border-radius: 10px;
-}
 /*code box*/
 .codeBox {
   font-size: 15px;
@@ -177,6 +168,7 @@ backdrop-filter: blur(0px);
 }
 .blog .pageTitle {
   font-size: 50px;
+  font-weight: bold;
   color: rgba(255, 255, 255, 0.9);
 }
 .pageTitle {

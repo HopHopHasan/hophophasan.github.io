@@ -10,16 +10,7 @@
   <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon"/>
   <link rel="stylesheet" href="../../style.css"/>
   <script type="text/javascript" src="../../scripts/devKey.js"></script>
-  <script type="text/javascript" src="../../scripts/checkBG.js"></script>  
 </head>
-<style>
-  body{
-    background-image: url('../../resources/backgrounds/MinecraftMushroom.webp');
-  }
-  video{
-    opacity: 0.95;
-  }
-</style>
 <body>
   <span class="header">
     <span style="font-size:15px;"><a href="../../index.html">Back</a></span>
@@ -34,9 +25,15 @@
     <div style="float:right" id="google_translate_element"></div>
     <img src="../../resources/icons/TranslateIcon.png" id="imagepixel" style="float:right"/>
   </span>
-  <script>
-    var result = "url('../../resources/backgrounds/MinecraftMushroom.png')";
-    checkBG();
-  </script>
 </body>
+<script>
+  if (localStorage.BGHQ == 1){
+    document.body.style.backgroundImage = "url('../../resources/backgrounds/MinecraftMushroom.png')";
+    console.log("high quality");
+  }
+  else{
+    document.body.style.backgroundImage = "url('../../resources/backgrounds/MinecraftMushroom.webp')";
+    console.log("normal quality");
+  }
+</script>
 </html>
