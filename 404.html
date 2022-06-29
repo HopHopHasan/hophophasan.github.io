@@ -33,8 +33,9 @@
           window.location.href = pageToGo;
       }
       else{
-        var pageToGo = "https://hophophasan.com/404";
-        window.location.href = pageToGo;
+        if (window.location.href != "https://hophophasan.com/404"){
+          window.location.href = "https://hophophasan.com/404";
+        }
       }
     </script>
   </main>
