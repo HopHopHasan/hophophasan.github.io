@@ -28,8 +28,8 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: soft-light;
-  -webkit-transition: background-image 0.5s ;
-  transition: background-image 0.5s;
+  -webkit-transition: background-image 0.4s ;
+  transition: background-image 0.4s;
 }
 h1 {
   font-size: 30px;

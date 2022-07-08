@@ -22,27 +22,12 @@
     </span>
   </nav>
   <main>
-    <div class="alert success">
-      <span class="closebtn">×</span>  
-      <span class="infoimage"><img src="resources/ItIsI.jpg" width="80"/></span>
-      <span class="infotext"><br/><strong>Please note!</strong> You must have javascript enabled to see the following result!<br/></span>
-      <div id="javascript">Javascript is disabled... uh oh...</div>
-      <script>
-        document.getElementById("javascript").innerHTML = "Javascript is enabled! Nice!";
-      </script>
-      <br/>
-    </div>
-    <script>
-      var close = document.getElementsByClassName("closebtn");
-      var i;
-      for (i = 0; i < close.length; i++) {
-        close[i].onclick = function(){
-          var div = this.parentElement;
-          div.style.opacity = "0";
-          setTimeout(function(){ div.style.display = "none"; }, 600);
-        }
-      }
-    </script>
+    <noscript>
+      <blockquote class="fail">
+        <b>IMPORTANT:</b><br/>
+        <span class="textFadeIn">Javascript is disabled, enable it to allow this page to function correctly.</span>
+      </blockquote>
+    </noscript>
     <p>Here is the data sent by the game:</p>
     <script>
       var url = window.location.href;
@@ -53,13 +38,8 @@
     <div class="ScrollBox">
       <script>document.write(report)</script>
     </div>
-    Your username: <script>document.write(username)</script>
-    <br/><p>Triple click to select all of the text, then use CTRL+C or COMMAND+C to copy it.</p><br/>
-
-    <span class="translatebox">
-      <div style="float:right" id="google_translate_element"></div>
-      <img src="resources/icons/TranslateIcon.png" id="imagepixel" style="float:right"/>
-    </span>
+    <br/>Your username: <script>document.write(username)</script>
+    <br/><p>Triple click to select all of the text, then use CTRL+C or COMMAND+C to copy it.</p>
   </main>
 </body>
 </html>

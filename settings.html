@@ -66,11 +66,6 @@
       document.getElementById("pagesize").innerHTML = innerWidth + "x" + innerHeight;
       document.getElementById("screenavail").innerHTML = screen.availWidth + "x" + screen.availHeight;
     </script>
-
-    <span class="translatebox">
-      <div style="float:right" id="google_translate_element"></div>
-      <img src="resources/icons/TranslateIcon.png" id="imagepixel" style="float:right"/>
-    </span>
     <script>
       $.get("https://ipinfo.io", function(response) {document.getElementById("IP").innerHTML = response.ip;}, "json")
       function reloadPage() {
