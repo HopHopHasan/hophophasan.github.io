@@ -302,7 +302,7 @@ backdrop-filter: blur(0px);
 .title:hover {
   color: rgba(255, 255, 255, 1);
 }
-.blog h1, h2{
+.h1, h2{
   color: rgba(255, 255, 255, 0.9);
   line-height: 1;
 }
