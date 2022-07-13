@@ -31,6 +31,12 @@ body {
   -webkit-transition: background-image 0.4s ;
   transition: background-image 0.4s;
 }
+/*maximise space for mobile devices*/
+@media screen and (max-width: 768px) {
+  body {
+    padding: 5px;
+  }
+}
 h1 {
   font-size: 30px;
 }
@@ -39,7 +45,14 @@ h2 {
 }
 /*force all images to fit*/
 img {
-  object-fit: contain
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+iframe {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /*maximise space for mobile devices*/
@@ -356,12 +369,12 @@ backdrop-filter: blur(0px);
 @media screen and (max-width: 768px) {
   .blog{
     max-width: 100%;
-    padding: 5px;
-    padding-top: 20px;
+    padding: 0px;
+    padding-top: 5px;
   }
   .blog .post{
     padding: 12px;
-    margin-block: 10px;
+    margin-block: 8px;
   }
   .blog .title{
     font-size: 30px;
