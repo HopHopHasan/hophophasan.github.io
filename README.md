@@ -6,7 +6,7 @@ This is the repository for the website [hophophasan.com](https://hophophasan.com
     - [ ] Add file backup section 
     - [ ] Also migrate the file section from the blog site
     - [ ] Also migrate the YouTube playlists section from the blog site
-    - [ ]Add "social" links
+    - [ ] Add "social" links
     - [ ] "EXPOS", explanations for various internet videos (and other things) I've made
     - [ ] Add a font test and unicode page
     - [ ] Game list and completion page
