@@ -19,7 +19,7 @@
     <div class="pageDesc"><span class="date">{date}</span> |
     <a class="tagHeader" href="../../index.html#tag1">tag1</a>
     <a class="tagHeader" href="../../index.html#tag2">tag2</a></div>
-    <p>Description</p>
+    <p>{description}</p>
   </div>
   
   <script>

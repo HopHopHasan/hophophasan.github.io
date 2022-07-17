@@ -54,7 +54,10 @@ iframe {
   max-width: 100%;
   object-fit: contain;
 }
-
+video {
+  border-radius: 22px;
+  overflow: hidden;
+}
 /*maximise space for mobile devices*/
 @media screen and (max-width: 768px) {
   video {
