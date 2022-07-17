@@ -328,9 +328,12 @@ backdrop-filter: blur(0px);
   max-height: 100%;
 }
 .image {
-  padding-top: 10px;
+  padding-top: 0px;
   display: block;
   margin: 0 auto;
+}
+.post .image {
+  padding-top: 10px;
 }
 .date {
   color: rgba(255, 255, 255, 0.6);
