@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LEAVES? | Blog</title>
+  <!--metadata-->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!--load files-->
+  <link rel="icon" href="../../../favicon.ico" type="image/x-icon"/> 
+  <link rel="shortcut icon" href="../../../favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" href="../../../style.css"/>
+  <script type="text/javascript" src="../../../scripts/devKey.js"></script>
+  <script type="text/javascript" src="../../../scripts/blogBG.js"></script>
+</head>
+<body class="blogBG">
+  <div class="blog">
+    <div><a href="https://hophophasan.com/blog">Back</a></div>
+    <div class="pageTitle">LEAVES?</div>
+    <div class="pageDesc"><span class="date">2022-01-19</span> |
+    <a class="tagHeader" href="../../index.html#test">test</a></div>
+    <style>
+      @keyframes sway { 
+      0% { 
+        transform: rotateZ(-15deg) rotateX(55deg);
+      }
+        30% {
+        transform: rotateZ(20deg) rotateX(60deg);
+        animation-timing-function: ease-in-out;
+      }
+      60% { 
+        transform: rotateZ(-20deg) rotateX(55deg);
+        animation-timing-function: ease-in-out;
+      }
+        100% {
+        transform: rotateZ(0deg) rotateX(58deg);
+        animation-timing-function: cubic-bezier(0.990, 0.000, 0.890, 0.435);
+        }
+    }
+    @keyframes fall { 
+      60% {
+        filter: drop-shadow(0px 60px 40px rgba(0,0,0,0));
+      }
+      100% {
+        margin-top: 500px;
+        filter: drop-shadow(0px 5px 8px rgba(0,0,0,0.6));
+      }
+    }
+    div#autumn-container {
+      width: 768px;
+      height: 400px;
+      border: 0px solid #000;
+      overflow: hidden;
+      position: relative;
+      perspective: 1800px;
+      }
+    img[alt="autumn leaf"] {
+      position: absolute;
+      width: 33%;
+      transform-origin: 0px -400px 0px;
+      animation-name: fall, sway;
+      animation-duration: 12s, 13s;
+      animation-fill-mode: both;
+      animation-timing-function: linear, ease-in-out;
+    }
+    img[alt="gater sponge bob"] {
+      position: absolute;
+      width: 33%;
+      transform-origin: 0px -400px 0px;
+      animation-name: fall, sway;
+      animation-duration: 5s, 6s;
+      animation-fill-mode: both;
+      animation-timing-function: linear, ease-in-out;
+    }
+    </style>
+    <div id="autumn-container">
+      <img src="gangster.webp" alt="autumn leaf" style="top: 200px;">
+      <img src="gangster.webp" alt="autumn leaf" style="top: 15px; left: 300px; animation-delay: 2s;">
+      <img src="gangster.webp" alt="autumn leaf" style="width: 28%; top: -122px; left: 110px; animation-delay: 3.2s;">
+      <img src="gangster.webp" alt="autumn leaf" style="width: 35%; top: -55px; left: 198px; animation-delay: 4.4s;">
+      <img src="sponge.png" alt="gater sponge bob" style="width: 38%; top: -18px; left: 560px; animation-delay: 2.25s;">
+      <img src="gangster.webp" alt="autumn leaf" style="width: 33%; top: 0px; left: 401px; animation-delay: 3.8s;">
+    </div>
+    
+  </div>
+  
+  <script>
+      checkBG(3);
+  </script>
+</body>

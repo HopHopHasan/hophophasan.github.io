@@ -2,7 +2,7 @@
       <div class="post">
         <a class="title" href="{date}/{folderTitle}/">{title}</a>
         <div class="desc">{description}</div>
-        <div class="image"><img src="{date}/{folderTitle}/image.webp" width="300" title="image" alt="Thumbnail for '{title}', showing something."/></div>
+        <div class="image"><img src="{date}/{folderTitle}/thumb.webp" width="300" title="image" alt="Thumbnail for '{title}', showing something."/></div>
         <span class="date">{date}</span> |
         <span class="tags"><a class="tag" href="#tag1">tag1</a>
           <a class="tag" href="#tag2">tag2</a></span>
