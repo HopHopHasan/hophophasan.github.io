@@ -1,15 +1,121 @@
 2022-07-20 - Add more posts, change script template files slightly, now scrollbar is slightly transparent
+
 2022-07-17 - Image spacing fixes, added more pages, created some automation scripts
 
-2022-06-24 - Various bug fixes
-2022-06-23 - Improve accessibility and alt images
+2022-07-14 - Slight corrections to pages and posts
+
+2022-07-13 - Updated some pages and posts, changed some file locations, added new downloads and more images for other pages
+
+2022-07-08 - Changed some code and pages slightly
+
+2022-07-03 - Bob Nebula Test and page created
+
+2022-07-01 - Page changes, new page teaser, update yt.zip, add subtitles, remove preloading, port blog pages
+
+2022-06-30 - Added blog porting warning
+
+2022-06-29 - Port blog pages, fix 404 page, bug fixes, new page teaser
+
+2022-06-25 - Small bug fix to yt.zip
+
+2022-06-24 - Various bug fixes and tweaks to pages
+
+2022-06-23 - Fixed font preloading, improved accessibility and alt images
+
 2022-06-22 - Improved loading times
+
 2022-06-21 - Changed backgrounds to .mp4's, compressed file sizes, improved performance
+
+2022-06-17 - Ported blog posts
+
+2022-06-16 - Background change is now smooth
+
 2022-06-13 - Removed blur effect to improve performance on some devices
-2022-06-09 - Ported more pages
+
+2022-06-10 - Ported blog posts
+
 2022-06-08 - Tweaked dev 'quick links' page
-2022-06-06 - Link bug fixes, added keyboard shortcut to DEV 'quick links' PAGE (interally デヴ)
+
+2022-07-07 - Added keyboard shortcut to DEV 'quick links' PAGE (interally デヴ)
+
+2022-06-06 - Link bug fixes
+
 2022-06-05 - Added background options to blog page, and high-quality options site wide (check settings)
-2020-06-05 - Created blog page
+
+2022-06-04 - Created blog page
+
+2022-06-03 - Changed fonts
+
+2022-05-28 - Comment test
+
+2022-05-27 - Tidied code
+
+2022-05-22 - Added khinsiderScript download, updated Bob test, cleaned up files
+
+2022-05-20 - Comment test
+
+2022-05-15 - BobAni2 reduced image size
+
+2022-05-14 - Added BobAni2
+
+2022-05-12 - Updated blog page, updated message on index page to reflect new .com domain
+
+2022-05-11 - Updated CNAME and README.md to reflect new .com domain
+
+2022-05-09 - Added files
+
+2022-05-08 - Added credits to Bob page, tweaked some pages
+
+2022-05-01 - Updated README.md
+
+2022-04-30 - Layout changes across pages
+
+2022-04-27 - Updated README.md and 404 page
+
+2022-04-25 - Image crop fix, added 'AWeirdDreamIHad'
+
+2022-04-16 - Added image
+
+2022-04-15 - Temp OST page
+
+2022-04-10 - Twitter card test, tweaked pages and backgrounds of those pages
+
+2022-04-08 - Condensed code, added some GIFs
+
+2022-03-26 - Updated UI
+
+2022-03-24 - Updated Bob test, fixed spelling mistake
+
+2022-03-22 - Updated yt.zip
+
+2022-03-21 - Bug fixes and small aesthetic changes, added screenshots for yt.zip
+
+2022-03-20 - Revamped some pages and backgrounds, removed page transitions temporarily
+
+2022-03-14 - Updated Bob game, changelogs and Bob page
+
+2022-03-06 - Added downloads page
+
+2022-03-04 - Added tests to index page
+
+2022-03-02 - Dark mode changes
+
+2022-03-01 - Added files, updated README.md
+
+2022-02-27 - Added README.md
+
+2022-02-22 - Testing darkmode, added clipboard page
+
+2022-02-20 - Updated Bob test
+
+2022-02-18 - Reduce fonts loaded
+
+2022-02-17 - Added dark mode
+
+2022-02-14 - Font testing
+
+2022-02-10 - Changed index, added favicon
+
+2022-02-09 - Website created
 
 // add a "last visited" option and an "updateTime" storage to force refresh page when there is a new update
