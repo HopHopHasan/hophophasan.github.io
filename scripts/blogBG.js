@@ -34,22 +34,3 @@ function checkBG(layer){
   }
   document.body.style.backgroundImage = result;
 }
-
-function changeBackground(layer){
-  var string = "url('";
-  for (let i = 0; i < layer; i++){
-    string = string.concat("../")
-  }
-  string = string.concat("resources/backgrounds/blogBG")
-  var random = getRandomInt(7)+1;
-  var savedPhoto = "blogBG" + random;
-  if (localStorage.BGHQ == 1){
-    var result = string.concat(random, ".png')")
-  }
-  else{
-    var result = string.concat(random, ".webp')")
-  }
-  localStorage.blogBG = savedPhoto;
-  console.log(savedPhoto + " BG saved to localStorage");
-  document.body.style.backgroundImage = result;
-}
